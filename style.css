@@ -96,67 +96,87 @@ form {
     cursor: pointer;
 }  
 
-.main-topic, .another-topic1, .another-topic2{
-  background: linear-gradient(#587792 ,#086788);
-  width: 600px;
-  height: 250px;
-  border-radius: 20px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+
 }
 
-.carrossel{
-  width: 100%;
-  text-align: center;
-  color: #FFA630; 
+.video-painel {
+    display: flex;
+    align-items: center;
+    width: 1400px;
+    height: 797px;
+    border: 3px solid #13678A;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: #8DB1AB;
 }
 
-.carrossel-container{
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  position: relative;
+.playlist-painel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    width: 290px;
+    height: 604px;
+    margin-left: 41px;
+    border-radius: 20px;
+    background-color: #086788;
 }
 
-.carrossel-item{
-  opacity: 1;
-  position: absolute;
-  transition: all 0.5s ease-in-out;
-  z-index: 0;
-  background-size: contain;
+.head-playlist {
+    position: relative;
+    top: 11px;
+    left: 29px;
+    color: #FFFFFF;
 }
 
-.another-topic1{
-  left: 15%;
-  transform: translateX(+10%);
-  max-height: 200px;
+ .button-playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00000088;
+    color: white;
+    cursor: pointer;
+ }
+
+ .button-playlist:hover {
+    background-color: #8DB1AB;
 }
 
-.main-topic{
-  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.441);
-  opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
+.playlist-video {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    
 }
 
-.another-topic2{
-  right: 15%;
-  transform: translateX(-10%);
-  max-height: 200px;
+.video-player {
+    background-color: #13678A;
+    width: 691px;
+    height: 401px;
+    border-radius: 20px;
+    margin: auto;
 }
 
-.carrossel-control{
-  display: flex;
-  justify-content: center;
-  margin: 25px 0;
-  height: 100px;
+.comment-painel {
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    height: 640px;
+    border-radius: 20px;
+    background-color: #13678A;
 }
 
-.carrossel-control button{
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 30px;
-  margin: 0 50px;
-  padding: 0 12px;
-  text-transform: capitalize;
+.head-comment {
+
+    font-size: 20px;
+    background-color: #00000088 ;
+    color: #ffffff;
 }
