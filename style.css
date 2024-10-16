@@ -16,7 +16,7 @@ body {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 4fr 1fr 6fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .grid-header {
@@ -51,6 +51,12 @@ body {
   right: 16px;
 }
 
+.search-bar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 form {
   display: flex;
   flex-direction: row;
@@ -79,7 +85,7 @@ form {
   background-color: black;
   border: none;
   font-size: 20px;
-  width: 700px;
+  width: 650px;
   color: #FFA630;
 }
 
@@ -130,10 +136,10 @@ form {
   position: absolute;
   transition: all 0.5s ease-in-out;
   z-index: 0;
+  box-shadow: -2px 10px 20px 6px rgba(0, 0, 0, 0.25);
 }
 
 .main-topic {
-  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.441);
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);
@@ -141,7 +147,6 @@ form {
   z-index: 2;
   flex-direction: column;
   text-shadow: -2px 5px 10px rgba(0, 0, 0, 0.25);
-  ;
 }
 
 .another-topic1 {
@@ -162,20 +167,29 @@ form {
 
 .carrossel-title {
   font-size: 38px;
+  margin-bottom: 10px;
 }
 
 .carrossel-subtitle {
   font-size: 20px;
   font-weight: bold;
   color: #8DB1AB;
+  padding: 0 50px;
 }
 
 .topics {
-  grid-column: span 12;
-  grid-row: 3/4;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  gap: 74px;
 }
 
-.topic-card {
+.group-1 {
+  padding-top: 80px;
+}
+
+.main-filter, .topic-btn {
+  cursor: pointer;
   width: 325px;
   height: 75px;
   background-color: #13678A;
@@ -186,4 +200,46 @@ form {
   align-items: center;
   font-size: 20px;
   color: #FFA630;
+  margin-bottom: 75px;
+  box-shadow: -1px 4px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.filter{
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.main-filter{
+  width: 180px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 16px;
+  justify-content: space-around;
+}
+
+.main-filter:hover, .topic-btn:hover{
+  background: #FFA630;
+  color: #13678A;
+}
+
+.links{
+  background-color: rgba(0, 0, 0, 0.50);
+  display: flex;
+  justify-content: center;
+  gap: 220px;
+  padding-top: 30px;
+}
+
+.links a{
+  color: #8DB1AB;
+}
+
+.autores {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.50);
+  padding: 25px 0;
+  font-size: 12px;
 }

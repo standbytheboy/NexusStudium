@@ -7,59 +7,100 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./script.js">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nexus Studium</title>
 </head>
 
 <body>
-    <div>
-        <header>
-            <nav class="grid-header">
-                <ul class="header">
-                    <li class="menuButton">
-                        <img class="menuIcon" src="./img/logomarca-png.png" alt="">
-                    </li>
-                    <li class="search-bar">
+    <header>
+        <nav class="grid-header">
+            <ul class="header">
+                <li class="menuButton">
+                    <img class="menuIcon" src="./img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+                </li>
+                <li>
+                    <div class="search-bar">
                         <form action="#">
                             <button class="searchButton" type="submit"><i class="searchIcon"><img
                                         src="./img/searchIcon.svg" alt=""></i></button>
                             <input class="search" type="text" placeholder="O que você quer aprender?">
                         </form>
-                    </li>
-                    <li>
-                        <div class="buttonHeader">
-                            <button type="button">login</button>
-                            <button type="button">cadastre-se</button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section class="grid-container">
-                
-                    <div class="carrossel">
-                        <div class="carrossel-item main-topic">
-                            <h2 class="carrossel-title">Trilha de Estudos</h2>
-                            <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                                experientes</p>
-                        </div>
-                        <div class="carrossel-item another-topic1">
-                            <h2>Em Alta</h2>
-                        </div>
-                        <div class="carrossel-item another-topic2">
-                            <h2>Artigos de Estudo</h2>
-                        </div>
                     </div>
-                    <div class="carrossel-control"></div>
-                    <script src="./script.js"></script>
-            </section>
+                </li>
+                <li>
+                    <div class="buttonHeader">
+                        <button type="button">login</button>
+                        <button type="button">cadastre-se</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <aside class="grid-container topics">
-                <div class="topic-card">ENEM</div>
-            </aside>
-        </main>
-    </div>
+    <main>
+        <section class="grid-container">
+            <div class="carrossel">
+                <div class="carrossel-item main-topic">
+                    <h2 class="carrossel-title">Trilha de Estudos</h2>
+                    <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
+                        experientes</p>
+                </div>
+                <div class="carrossel-item another-topic1">
+                    <h2>Em Alta</h2>
+                </div>
+                <div class="carrossel-item another-topic2">
+                    <h2>Artigos de Estudo</h2>
+                </div>
+            </div>
+            <div class="carrossel-control"></div>
+            <script src="./script.js"></script>
+        </section>
+
+        <aside class="filter">
+            <div class="main-filter"><i class="fa-solid fa-filter"></i>Em alta
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </aside>
+
+        <aside>
+            <div class="topics group-1">
+                <div class="topic-btn">ENEM</div>
+                <div class="topic-btn">Programação</div>
+                <div class="topic-btn">Gastronomia</div>
+            </div>
+            <div class="topics">
+                <div class="topic-btn">Arquitetura</div>
+                <div class="topic-btn">Direito</div>
+                <div class="topic-btn">Mecânica</div>
+            </div>
+            <div class="topics">
+                <div class="topic-btn">Engenharia</div>
+                <div class="topic-btn">Medicina</div>
+                <div class="topic-btn">Idiomas</div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="links">
+            <div class="help-footer">
+                <a href="#">Ajuda - Perguntas Frequentes</a>
+            </div>
+            <div class="payment-footer">
+                <a href="#">Formas de Pagamento</a>
+            </div>
+            <div class="social-media-footer">
+                <a href="#">Contatos e Redes Sociais</a>
+            </div>
+        </div>
+        <div class="autores">
+            <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
+            <p>Copyright &copy; Todos os direitos reservados</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
