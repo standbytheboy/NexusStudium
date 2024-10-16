@@ -85,7 +85,7 @@ form {
   background-color: black;
   border: none;
   font-size: 20px;
-  width: 700px;
+  width: 650px;
   color: #FFA630;
 }
 
@@ -179,7 +179,7 @@ form {
   grid-row: 4/5;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 74px;
 }
 
 .group-1 {
@@ -198,7 +198,7 @@ form {
   align-items: center;
   font-size: 20px;
   color: #FFA630;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .links{
