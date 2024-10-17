@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./script.js">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,22 +13,22 @@
 
 <body>
     <header>
-        <nav class="grid-header">
-            <ul class="header">
-                <li class="menuButton">
-                    <img class="menuIcon" src="./img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+        <nav>
+            <ul class="grid-header">
+                <li class="menu-btn">
+                    <img class="menu-icon" src="./img/logomarca-png.png" alt="Logomarca do Nexus Studium">
                 </li>
-                <li>
-                    <div class="search-bar">
-                        <form action="#">
-                            <button class="searchButton" type="submit"><i class="searchIcon"><img
+                <li class="search-bar">
+                    <div>
+                        <form class="bg-search">
+                            <button class="search-button" type="submit"><i class="search-icon"><img
                                         src="./img/searchIcon.svg" alt=""></i></button>
-                            <input class="search" type="text" placeholder="O que você quer aprender?">
+                            <input class="search-input" type="text" placeholder="O que você quer aprender?">
                         </form>
                     </div>
                 </li>
-                <li>
-                    <div class="buttonHeader">
+                <li class="button-header">
+                    <div>
                         <button type="button">login</button>
                         <button type="button">cadastre-se</button>
                     </div>
@@ -38,21 +36,18 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section class="grid-container">
-            <div class="carrossel">
-                <div class="carrossel-item main-topic">
-                    <h2 class="carrossel-title">Trilha de Estudos</h2>
-                    <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                        experientes</p>
-                </div>
-                <div class="carrossel-item another-topic1">
-                    <h2>Em Alta</h2>
-                </div>
-                <div class="carrossel-item another-topic2">
-                    <h2>Artigos de Estudo</h2>
-                </div>
+    <main class="grid-container">
+        <section class="carrossel">
+            <div class="carrossel-item main-topic">
+                <h2 class="carrossel-title">Trilha de Estudos</h2>
+                <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
+                    experientes</p>
+            </div>
+            <div class="carrossel-item another-topic1">
+                <h2>Em Alta</h2>
+            </div>
+            <div class="carrossel-item another-topic2">
+                <h2>Artigos de Estudo</h2>
             </div>
             <div class="carrossel-control"></div>
             <script src="./script.js"></script>
@@ -64,25 +59,24 @@
             </div>
         </aside>
 
-        <aside>
-            <div class="topics group-1">
+        <aside class="topics">
+            <div class="gp-1">
                 <div class="topic-btn">ENEM</div>
                 <div class="topic-btn">Programação</div>
                 <div class="topic-btn">Gastronomia</div>
             </div>
-            <div class="topics">
+            <div class="gp-2">
                 <div class="topic-btn">Arquitetura</div>
                 <div class="topic-btn">Direito</div>
                 <div class="topic-btn">Mecânica</div>
             </div>
-            <div class="topics">
+            <div class="gp-3">
                 <div class="topic-btn">Engenharia</div>
                 <div class="topic-btn">Medicina</div>
                 <div class="topic-btn">Idiomas</div>
             </div>
         </aside>
     </main>
-
     <footer>
         <div class="links">
             <div class="help-footer">
@@ -99,7 +93,6 @@
             <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
-
     </footer>
 </body>
 
