@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./carrousel/style.css">
     <title>Nexus Studium</title>
 </head>
 
@@ -29,7 +30,7 @@
                 </li>
                 <li class="button-header">
                     <div>
-                        <button type="button">login</button>
+                        <button type="button" id="openModalBtn">login</button>
                         <button type="button">cadastre-se</button>
                     </div>
                 </li>
@@ -37,21 +38,40 @@
         </nav>
     </header>
     <main class="grid-container">
-        <section class="carrossel">
-            <div class="carrossel-item main-topic">
-                <h2 class="carrossel-title">Trilha de Estudos</h2>
-                <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                    experientes</p>
+        <div class="carrossel flex">
+            <span class="slider" id="slider4"></span>
+            <span class="slider" id="slider5"></span>
+            <span class="slider" id="slider6"></span>
+
+            <div class="div-container">
+                <div class="slide-div flex" id="slide-4">
+                    <div class="bg flex" id="bg4">
+                        <h2 class="carrossel-title">Trilha de Estudos</h2>
+                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
+                            experientes</p>
+                    </div>
+                    <a href="#slider4" class="button" id="btn"></a>
+                </div>
+
+                <div class="slide-div flex" id="slide-5">
+                    <div class="bg flex" id="bg5">
+                        <h2 class="carrossel-title">Trilha de Estudos</h2>
+                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
+                            experientes</p>
+                    </div>
+                    <a href="#slider5" class="button" id="btn"></a>
+                </div>
+
+                <div class="slide-div flex" id="slide-6">
+                    <div class="bg flex" id="bg6">
+                        <h2 class="carrossel-title">Trilha de Estudos</h2>
+                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
+                            experientes</p>
+                    </div>
+                    <a href="#slider6" class="button" id="btn"></a>
+                </div>
             </div>
-            <div class="carrossel-item another-topic1">
-                <h2>Em Alta</h2>
-            </div>
-            <div class="carrossel-item another-topic2">
-                <h2>Artigos de Estudo</h2>
-            </div>
-            <div class="carrossel-control"></div>
-            <script src="./script.js"></script>
-        </section>
+        </div>
 
         <aside class="filter">
             <div class="main-filter"><i class="fa-solid fa-filter"></i>Em alta
@@ -93,6 +113,53 @@
             <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content flex">
+                <span class="close"></span>
+                <img src="./img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
+                <div class="bg-input flex">
+                    <form class="space flex">
+                        <input type="text" id="input1" name="input1" placeholder="Email"><br><br>
+                        <input type="text" id="input2" name="input2" placeholder="Senha"><br><br>
+                        <button type="submit" class="btn-login">Entrar</button>
+                        <div class="more-options">
+                            <button type="submit" class="btn-more">Entrar com Google</button>
+                            <button type="submit" class="btn-more">Entrar de outra forma</button>
+                        </div>
+                        <p class="forgot-password">Esqueci a senha</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Pega o modal
+            var modal = document.getElementById("myModal");
+
+            // Pega o botão que abre o modal
+            var btn = document.getElementById("openModalBtn");
+
+            // Pega o elemento <span> que fecha o modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // Quando o usuário clicar no botão, abre o modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // Quando o usuário clicar no <span> (x), fecha o modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // Quando o usuário clicar fora do modal, fecha o modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </footer>
 </body>
 
