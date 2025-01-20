@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #273847;
+}
+
+/*----------------------- Cabeçalho (Header) -----------------------*/
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1400px;
+    margin: 0 auto 50px;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    grid-column: 1 / 3;
+    background-color: black;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    margin: 28px 55px
+}
+
+.menu-icon {
+    width: 100px;
+    position: relative;
+    bottom: 16px;
+    right: 16px;
+}
+
+.search-bar {
+    grid-column: 4 / 9;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.bg-search {
+    width: 650px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid #FFA630;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    margin-right: 33px;
+}
+
+.search-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 17.35px;
+    cursor: pointer;
+    color: #FFA630;
+}
+
+.search-input {
+    all: unset;
+    background-color: black;
+    border: none;
+    width: 500px;
+    color: #FFA630;
+    font-size: 20px;
+}
+
+.button-header {
+    grid-column: 10 /13;
+    display: flex;
+}
+
+.search-input::placeholder {
+    color: #FFA630;
+}
+
+.user-button {
+    grid-column: 12/-1;
+    margin-top: 30px;
+}
+
+.user-page{
+    width: 67px;
+    height: 67px;
+    background-color: #FFA630;
+    border-radius: 50%;
+    border: 8px solid black;
+}
+
+/*----------------------- Conteúdo Princial (Main) -----------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/*----------------------- Botões de Navegação -----------------------*/
+
+.nav_video {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.nav_video button {
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+/*----------------------- Painel Princial -----------------------*/
+
+.main-painel {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    padding: 75px 40px;
+    margin: 0 auto;
+    border: 3px solid #13678A ;
+    border-radius: 20px;
+    width: 1440px;
+    height: 798px;
+    background-color: rgba(0, 0, 0, 0.575);
+    gap: 20px;
+}
+
+/*----------------------- Playlist Section -----------------------*/
+
+.playlist-section {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 604px;
+    background-color: #086788;
+    border-radius: 20px;
+}
+
+.head-playlist {
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    height: 44px;
+}
+
+.head-playlist h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.playlist-content {
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.button-playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #0808087e;
+    width: 230px;
+    height: 40px;
+}
+
+.playlist-list a {
+    padding: 5px 72px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.button-playlist:hover {
+    background-color: #8DB1AB;
+}
+
+/*----------------------- Vídeo Section -----------------------*/
+
+.video-section {
+    width: 692px;
+    height: 604px;
+}
+
+.video-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 692px;
+    height: 486px;
+    background-color: #086788 ;
+}
+
+.video-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 82px;
+    color: #8DB1AB ;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 692px;
+    height: 36px;
+    background-color: #8DB1AB;
+}
+
+.info-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 96px;
+    height: 22px;
+    font-size: 22px;
+}
+
+.autor-information {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#autor-link {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.video-review {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 110px;
+    height: 22px;
+}
+
+/*----------------------- Comment Section -----------------------*/
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 290px;
+    height: 604px;
+    background-color: #086788;
+}
+
+.head-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0 ;
+    width: 290px;
+    height: 54px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+}
+
+.foot-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 290px;
+    height: 68px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.foot-comment input {
+    border-radius: 5px;
+    width: 212px;
+    height: 30px;
+}
+
+.foot-comment input::placeholder {
+    padding-left: 28px;
+    color: #086788;
+}
+
+.foot-comment button {
+    height: 46px;
+    width: 46px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 26px;
+    background-color: black;
+}
+
+/*----------------------- Cabeçalho (Footer) -----------------------*/
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.links{
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    padding-top: 30px;
+  }
+  
+  .links a{
+    color: #8DB1AB;
+  }
+  
+  .autores {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+/*----------------------- Página de Comunidade -----------------------*/
+
+.painel_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 352px;
+    height: 884px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: solid 2px #8DB1AB;
+    border-radius: 20px;
+}
+
+.painel_nav nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #8DB1AB;
+    margin-top: 50px;
+}
+
+.painel_nav nav ul li {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+.painel_content {
+    width: 1074px;
+    height: 884px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: solid 2px #8DB1AB;
+    border-radius: 20px;
+}
+
+.painel_content_cabecalho {
+    color: #8DB1AB;
+    padding: 40px;
+
+}
+
+.painel_content_cabecalho h1 {
+    font-size: 40px;
+}
+
+.painel_content_cabecalho p {
+    font-size: 20px;
+}
+
+.painel_content_iten {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 40px 20px 40px;
+    color: #8DB1AB;
+}
+
+.content_iten_title_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.content_iten_title {
+    font-size: 24px;
+    color: #5D5791;
+}
+
+.painel_content_iten p {
+    font-size: 20px;
+}
+
+.review_iten {
+    display: flex;
+    align-items: center;
+}
+.review_iten button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.50);
+}
