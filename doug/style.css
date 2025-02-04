@@ -441,5 +441,215 @@ footer{
 }
 .review_iten button {
     border: none;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+/*----------------------- Página de Ajuda -----------------------*/
+.main_help {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    margin-bottom: 60px;
+}
+
+.painel_help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 474px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_help h2 {
+    font-size: 38px;
+    color: #8DB1AB;
+}
+
+.help_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 382px;
+    height: 55px;
+    padding: 0 20px;
+    margin: 75px auto;
+    background-color: #8DB1AB;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*-----Duvidas Frequentes-----*/
+.painel_question {
+    display: none;  /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_question h2 {
+    font-size: 38px;
+    color: #8DB1AB;
+}
+
+.question_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 656px;
+    height: 92px;
+    padding: 0 20px;
+    margin: 20px auto;
+    background-color: #8DB1AB;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*-----Painel Sobre-----*/
+.painel_about {
+    display: none;  /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_about h2 {
+    font-size: 38px;
+    color: #8DB1AB;
+}
+
+.about_content {
+    width: 656px;
+    height: 560px;
+}
+
+.about_top {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 92px;
+    background-color: #086788;
+    border-radius: 10px 10px 0 0;
+}
+
+.about_top h2 {
+    color: black;
+    font-size: 35px;
+}
+
+.about_text {
+    padding: 20px;
+    height: 468px;
+    font-size: 16px;
+    background-color: #8DB1AB;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+}
+
+/*-----Painel Feedback-----*/
+.painel_feedback {
+    display: flex;  /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_feedback h2 {
+    font-size: 38px;
+    color: #8DB1AB;
+}
+
+.feedback_content {
+    width: 656px;
+    height: 560px;
+}
+
+.feedback_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 92px;
+    background-color: #086788;
+    border-radius: 10px 10px 0 0;
+}
+
+.feedback_top h2 {
+    color: black;
+    font-size: 35px;
+}
+
+.feedback_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    height: 468px;
+    font-size: 16px;
+    background-color: #8DB1AB;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+}
+
+.input_info {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 362px;
+    height: 38px;
+    background-color: #D9D9D9;
+    box-shadow: inset 0px 2px 3px gray;
+}
+
+.input_feedback {
+    width: 594px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    box-shadow: inset 0px 2px 3px gray;
+    padding-top: -10px;
+}
+
+.btnFeedback {
+    width: 92px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: #086788;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px black;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
 }
