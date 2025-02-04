@@ -161,8 +161,9 @@ body {
 }
 
 .select-btn:hover{
-    background-color: #5D5791;
-    border: 1px solid #8DB1AB;
+    background-color: #8DB1AB;
+    border: 1px solid black;
+    color: black;
     padding-left: 35px;
 }
 
