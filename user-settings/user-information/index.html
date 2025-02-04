@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Informações do Usuário</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="grid-header">
+                <li class="menu-btn">
+                    <img class="menu-icon" src="../../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+                </li>
+                <li class="search-bar">
+                    <div>
+                        <form class="bg-search">
+                            <button class="search-button" type="submit"><i
+                                    class="search-icon fa-2x fa-solid fa-magnifying-glass"></i></button>
+                            <input class="search-input" type="text" placeholder="O que você quer aprender?">
+                        </form>
+                    </div>
+                </li>
+                <li class="user-button">
+                    <div class="flex user-page">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section class="flex left-card">
+            <div class="flex head-user">
+                <div class="user">
+                    <i class="fa-solid fa-user fa-5x"></i>
+                </div>
+                <div class="user-name flex"><em>NOME DO USUÁRIO</em></div>
+            </div>
+            <div class="flex select-btn"><i class="fa-regular fa-address-card fa-2x"></i>
+                <a href="#"><p>Informações Pessoais</p></a>
+            </div>
+            <div class="flex select-btn"><i class="fa-solid fa-shield-halved fa-2x"></i>
+               <a href="../user-security/index.html"><p>Segurança</p></a>
+            </div>
+            <div class="flex select-btn"><i class="fa-solid fa-handshake-angle fa-2x"></i>
+                <a href="../user-signature/index.html"><p>Assinatura Nexus</p></a>
+            </div>
+            <div class="flex select-btn"><i class="fa-regular fa-circle-play fa-2x"></i>
+                <a href="../user-video-player/index.html"><p>Reprodução de Vídeos</p></a>
+            </div>
+        </section>
+        <aside class="flex right-card">
+            <h2>Informações Pessoais</h2>
+            <form action="#" class="form">
+                <div class="flex bg-label">
+                    <label for="seu_nome">Seu Nome</label>
+                </div>
+                <input class="full-input" type="text" name="seu_nome" id="seu_nome"
+                    placeholder="Digite seu nome aqui...">
+
+                <div class="wrap">
+                    <div class="row">
+                        <div class="flex bg-half-label">
+                            <label for="email_rec">Data de Nascimento</label>
+                        </div>
+                        <input class="half-input" type="date" name="born_date" id="born_date"
+                            placeholder="Digite seu nome aqui...">
+                    </div>
+                    <div class="row">
+                        <div class="flex bg-half-label">
+                            <label for="gender">Gênero</label>
+                        </div>
+                        <input class="half-input" type="text" name="gender" id="gender"
+                            placeholder="Digite seu nome aqui...">
+                    </div>
+                </div>
+                <div class="flex bg-label">
+                    <label for="email">Email</label>
+                </div>
+                <input class="full-input" type="text" name="email" id="email" placeholder="Digite seu nome aqui...">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="flex bg-half-label">
+                            <label for="tel-1">Telefone 1</label>
+                        </div>
+                        <input class="half-input" type="tel" name="tel" id="tel-1"
+                            placeholder="(00) 91234-5678">
+                    </div>
+                    <div class="row">
+                        <div class="flex bg-half-label">
+                            <label for="tel-2">Telefone 2</label>
+                        </div>
+                        <input class="half-input" type="tel" name="tel" id="tel-2"
+                            placeholder="(00) 91234-5678">
+                    </div>
+                </div>
+
+                <div class="flex bg-label">
+                    <label for="email_rec">Email Recuperação</label>
+                </div>
+                <input class="full-input" type="text" name="email" id="email_rec" placeholder="exemplo@email.com">
+                <div class="flex bg-label">
+                    <label for="email_rec2">Email Recuperação 2</label>
+                </div>
+                <input class="full-input" type="text" name="email" id="email_rec2"
+                    placeholder="exemplo@email.com">
+                <input class="btn-form" type="submit" value="Salvar Alterações">
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="links">
+            <div class="help-footer">
+                <a href="#">Ajuda - Perguntas Frequentes</a>
+            </div>
+            <div class="payment-footer">
+                <a href="#">Formas de Pagamento</a>
+            </div>
+            <div class="social-media-footer">
+                <a href="#">Contatos e Redes Sociais</a>
+            </div>
+        </div>
+        <div class="autores">
+            <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
+            <p>Copyright &copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
