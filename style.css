@@ -6,10 +6,17 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "M PLUS Code Latin", system-ui;
+    text-decoration: none;
 }
 
 body {
     background: #273847;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
@@ -20,34 +27,22 @@ body {
     margin: 0 auto;
 }
 
-.grid-header {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.nav {
+    margin: 25px auto 0;
     max-width: 1400px;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
-.menu-btn {
-    grid-column: 1 / 3;
+.nav-btn{
     background-color: black;
     width: 67px;
     height: 67px;
     border-radius: 50%;
-    margin: 28px 55px
-}
-
-.menu-icon {
-    width: 100px;
-    position: relative;
-    bottom: 16px;
-    right: 16px;
 }
 
 .search-bar {
-    grid-column: 4 / 9;
     display: flex;
     justify-content: center;
-    margin-top: 36px;
 }
 
 .bg-search {
@@ -81,11 +76,6 @@ body {
     font-size: 20px;
 }
 
-.button-header {
-    grid-column: 10 /13;
-    display: flex;
-}
-
 .search-input::placeholder {
     color: #FFA630;
 }
@@ -93,8 +83,6 @@ body {
 .button-header {
     display: flex;
     gap: 16px;
-    padding-right: 55px;
-    margin-top: 37px;
 }
 
 .button-header button {
@@ -111,6 +99,15 @@ body {
     background-color: #FFA630;
     color: black;
     cursor: pointer;
+}
+
+.user-page{
+    width: 67px;
+    height: 67px;
+    background-color: #FFA630;
+    border-radius: 50%;
+    border: 8px solid black;
+    color: black;
 }
 
 .topics {
@@ -222,12 +219,6 @@ body {
     transition: 1s;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .slide-div{
     margin: 0 10px;
 }
@@ -263,42 +254,6 @@ body {
     width: 350px;
     height: 200px;
     transition: 0.7s;
-}
-
-#slider4:target~.div-container #bg4 {
-    position: absolute;
-    background: linear-gradient(#086788, #587792);
-    filter: saturate(100%);
-    width: 600px;
-    height: 250px;
-    z-index: 1;
-}
-
-
-#slider5:target~.div-container #bg5 {
-    position: absolute;
-    background: linear-gradient(#086788, #587792);
-    filter: saturate(100%);
-    width: 600px;
-    height: 250px;
-    z-index: 2;
-}
-
-#slider6:target~.div-container #bg6 {
-    position: absolute;
-    width: 600px;
-    height: 250px;
-    filter: saturate(100%);
-    z-index: 3;
-    background: linear-gradient(#086788, #587792);
-}
-
-#slider4:target~.div-container {
-    left: 50%;
-}
-
-#slider6:target~.div-container {
-    left: -50%;
 }
 
 .modal {
@@ -352,6 +307,10 @@ body {
     border-radius: 20px;
     border: none;
     font-size: 20px;
+}
+
+.btn-login a {
+    color: #8DB1AB;
 }
 
 .btn-more {
