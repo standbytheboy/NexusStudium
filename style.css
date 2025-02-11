@@ -117,7 +117,8 @@ button:hover {
     color: black;
 }
 
-.nav-btn:hover, .user-button:hover {
+.nav-btn:hover,
+.user-button:hover {
     opacity: 0.7;
     cursor: pointer;
 }
@@ -154,15 +155,16 @@ button:hover {
     flex: 0.5;
     margin: 2rem 0.3rem;
     position: relative;
-    transition: all 700ms ease-in;
+    -webkit-transition: opacity 700ms ease-in, flex 700ms ease-in;
+    transition: opacity 700ms ease-in, flex 700ms ease-in;
 }
+
 
 .panel:hover {
     opacity: 0.7;
-    transition: none;
 }
 
-.panel p {
+.panel .carrossel-sub {
     font-size: 24px;
     position: absolute;
     bottom: 20px;
@@ -175,15 +177,17 @@ button:hover {
     flex: 5;
 }
 
-.panel.active p {
+.panel.active .carrossel-sub {
     opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+    -webkit-transition: opacity 700ms ease-in, flex 700ms ease-in;
+    transition: opacity 700ms ease-in, flex 700ms ease-in;
     margin: 1rem 1.5rem;
 }
 
-.panel.active h3 {
+.panel.active .carrossel-title {
     writing-mode: horizontal-tb;
-    transition: opacity 0.3s ease-in 0.4s;
+    -webkit-transition: opacity 700ms ease-in, flex 700ms ease-in;
+    transition: opacity 700ms ease-in, flex 700ms ease-in;
 }
 
 @media (max-width: 480px) {
@@ -305,7 +309,7 @@ button:hover {
     position: relative;
 }
 
-.modal-content img{
+.modal-content img {
     margin: -3rem;
 }
 
