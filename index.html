@@ -15,7 +15,8 @@
     <header>
         <nav>
             <ul class="nav flex">
-                <li class="nav-btn flex"><img src="../img/logomarca-png.png" alt="Logomarca NexusStudium" width="100px"></li>
+                <li class="nav-btn flex"><img src="../img/logomarca-png.png" alt="Logomarca NexusStudium" width="100px">
+                </li>
                 <li class="search-bar">
                     <div>
                         <form class="bg-search">
@@ -23,7 +24,8 @@
                                         src="../img/searchIcon.svg" alt=""></i></button>
                             <input class="search-input" type="text" placeholder="O que você quer aprender?">
                         </form>
-                    </div></li>
+                    </div>
+                </li>
                 <li class="button-header">
                     <div>
                         <button type="button" id="openModalBtn">login</button>
@@ -34,40 +36,34 @@
         </nav>
     </header>
     <main class="grid-container">
-        <div class="carrossel flex">
+        <div class="container">
+            <div class="panel flex active">
+                <h3 class="carrossel-title">Trilha</h3>
+                <p class="carrossel-sub">Se desenvolva através de um caminho pré-definido por profissionais experientes
+                </p>
 
-            <div class="div-container">
-                <div class="slide-div flex" id="slide-1">
-                    <div class="bg flex" id="bg4">
-                        <h2 class="carrossel-title">Trilha de Estudos</h2>
-                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                            experientes</p>
-                    </div>
-                </div>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Artigos</h3>
+                <p class="carrossel-sub">Aprenda através de textos feitos pela comunidade</p>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Exercícios</h3>
+                <p class="carrossel-sub">Pratique seus conhecimentos através de exercícios</p>
 
-                <div class="slide-div flex" id="slide-2">
-                    <div class="bg flex" id="bg5">
-                        <h2 class="carrossel-title">Trilha de Estudos</h2>
-                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                            experientes</p>
-                    </div>
-                </div>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Comunidade</h3>
+                <p class="carrossel-sub">Retire suas dúvidas e expanda seus conhecimentos com auxilio de outros usuários
+                </p>
 
-                <div class="slide-div flex" id="slide-3">
-                    <div class="bg flex" id="bg6">
-                        <h2 class="carrossel-title">Trilha de Estudos</h2>
-                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                            experientes</p>
-                    </div>
-                </div>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Em alta</h3>
+                <p class="carrossel-sub">Busque os vídeos e trilhas mais vistos</p>
+
             </div>
         </div>
-
-        <aside class="filter">
-            <div class="main-filter"><i class="fa-solid fa-filter"></i>Em alta
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </aside>
 
         <aside class="topics">
             <div class="gp-1">
@@ -87,6 +83,7 @@
             </div>
         </aside>
     </main>
+
     <footer>
         <div class="links">
             <div class="help-footer">
@@ -103,28 +100,28 @@
             <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
+    </footer>
 
-        <div id="myModal" class="modal">
-            <div class="modal-content flex">
-                <span class="close"></span>
-                <img src="./img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
-                <div class="bg-input flex">
-                    <form class="space flex">
-                        <input type="text" id="input1" name="input1" placeholder="Email"><br><br>
-                        <input type="text" id="input2" name="input2" placeholder="Senha"><br><br>
-                        <button type="submit" class="btn-login"><a href="./login-page/index.html">Entrar</a></button>
-                        <div class="more-options">
-                            <button type="submit" class="btn-more">Entrar com Google</button>
-                            <button type="submit" class="btn-more">Entrar de outra forma</button>
-                        </div>
-                        <p class="forgot-password">Esqueci a senha</p>
-                    </form>
-                </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content flex">
+            <span class="close">x</span>
+            <img src="./img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
+            <div class="bg-input flex">
+                <form class="space flex">
+                    <input type="text" id="input1" name="input1" placeholder="Email"><br><br>
+                    <input type="text" id="input2" name="input2" placeholder="Senha"><br><br>
+                    <button type="submit" class="btn-login"><a href="./login-page/index.html">Entrar</a></button>
+                    <div class="more-options">
+                        <button type="submit" class="btn-more">Entrar com Google</button>
+                        <button type="submit" class="btn-more">Entrar de outra forma</button>
+                    </div>
+                    <p class="forgot-password">Esqueci a senha</p>
+                </form>
             </div>
         </div>
+    </div>
 
-        <script src="./modal.js"></script>
-    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

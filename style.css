@@ -19,12 +19,16 @@ body {
     align-items: center;
 }
 
+/* CONTAINER GERAL E NAV */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1.5fr .5fr 2fr;
+    grid-template-rows: 1fr 1.2fr;
     max-width: 1400px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav {
@@ -33,7 +37,7 @@ body {
     justify-content: space-between;
 }
 
-.nav-btn{
+.nav-btn {
     background-color: black;
     width: 67px;
     height: 67px;
@@ -101,7 +105,7 @@ body {
     cursor: pointer;
 }
 
-.user-page{
+.user-page {
     width: 67px;
     height: 67px;
     background-color: #FFA630;
@@ -110,9 +114,82 @@ body {
     color: black;
 }
 
+/* CARROSSEL */
+
+.container {
+    display: flex;
+    width: 58vw;
+    margin: 0 auto;
+    grid-column: 2/12;
+    grid-row: 1/2;
+}
+
+.carrossel-title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carrossel-sub {
+    font-size: 20px;
+    color: #8DB1AB;
+    font-weight: bold;
+}
+
+.panel {
+    background: linear-gradient(to left, #086788, #587792);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    color: #FFA630;
+    height: 40vh;
+    border-radius: 3rem;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 2rem 0.3rem;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.panel p {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    margin: 1rem 1.5rem;
+}
+
+.panel.active h3 {
+    writing-mode: horizontal-tb;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+/* SEÇÃO DE TÓPICOS */
+
 .topics {
     grid-column: span 12;
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: flex;
     justify-content: center;
     gap: 74px;
@@ -144,7 +221,6 @@ body {
     padding-right: 6%;
 }
 
-.main-filter,
 .topic-btn {
     cursor: pointer;
     width: 325px;
@@ -161,26 +237,12 @@ body {
     box-shadow: -1px 4px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
-.filter {
-    grid-column: 6/8;
-    grid-row: 2/3;
-    margin: 0 auto;
-}
-
-.main-filter {
-    width: 180px;
-    height: 30px;
-    border-radius: 10px;
-    margin: 0;
-    font-size: 16px;
-    justify-content: space-around;
-}
-
-.main-filter:hover,
 .topic-btn:hover {
     background: #FFA630;
     color: #13678A;
 }
+
+/* FOOTER E LINKS */
 
 .links {
     background-color: rgba(0, 0, 0, 0.50);
@@ -202,53 +264,6 @@ body {
     font-size: 12px;
 }
 
-.carrossel {
-    grid-column: 2/12;
-    grid-row: 1/2;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.div-container {
-    position: relative;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    transition: 1s;
-}
-
-.slide-div{
-    margin: 0 10px;
-}
-
-.bg {
-    position: relative;
-    background: linear-gradient(#086788, #587792);
-    width: 350px;
-    height: 200px;
-    transition: 0.7s;
-    border-radius: 20px;
-    z-index: 0;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-}
-
-.carrossel-title {
-    font-size: 38px;
-    color: #FFA630;
-}
-
-.carrossel-subtitle {
-    font-size: 20px;
-    color: #8DB1AB;
-    font-weight: bold;
-}
-
 .button {
     position: absolute;
     width: 350px;
@@ -256,33 +271,42 @@ body {
     transition: 0.7s;
 }
 
+/* MODAL DE LOGIN */
+
 .modal {
-    display: none; /* Escondido por padrão */
+    display: none;
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
+    height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     background: linear-gradient(#13678A, #5D5791);
-    margin: 1% auto;
+    margin: 4rem auto;
     padding: 20px;
     border-radius: 20px;
-    width: 882px;
-    height: 920px;
+    width: fit-content;
+    height: fit-content;
     flex-direction: column;
+    position: relative;
+}
+
+.modal-content img{
+    margin: -3rem;
 }
 
 .bg-input {
     background-color: rgba(11, 11, 11, 0.55);
-    width: 690px;
-    height: 585px;
+    width: min-content;
+    height: min-content;
     border-radius: 20px;
     text-align: center;
+    padding: 3rem;
 }
 
 .bg-input input {
@@ -299,7 +323,8 @@ body {
     font-size: 20px;
 }
 
-.btn-login, .btn-more {
+.btn-login,
+.btn-more {
     width: 218px;
     height: 60px;
     background-color: black;
@@ -326,10 +351,14 @@ body {
 
 .close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem 2rem;
 }
+
 .close:hover,
 .close:focus {
     color: black;
