@@ -12,13 +12,15 @@
 }
 
 .modal-content {
-    width: max-content;
+    max-width: 1100px;
     height: max-content;
     background: #273847;
     margin: 4rem auto;
     padding: 20px;
     border-radius: 20px;
     position: relative;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .bg-card-progress {
@@ -27,11 +29,20 @@
     border: 3px solid #8DB1AB;
     border-radius: 20px;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 3rem;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bg-card-progress h3 {
     font-weight: 400;
     font-size: 32px;
+}
+
+.all-cards {
+    gap: 2rem;
 }
 
 .card-progress {
@@ -40,26 +51,51 @@
     height: 15rem;
     border-radius: 1.5rem;
     color: #FFA630;
+    font-size: 1.2rem;
+    text-align: center;
+    gap: 1rem;
     flex-direction: column;
 }
 
-.progress-bar {
+.progress {
     background-color: #10161C80;
+    width: 340px;
+    height: 50px;
+    border-radius: 0.6rem;
+
+}
+
+.progress-bar {
+    width: 300px;
+    height: 3px;
+    background-color: #FFA63050;
+}
+
+.w-70 {
+    width: 222px;
+    height: 3px;
+    background-color: #FFA630;
+}
+
+.w-100 {
+    width: 300px;
+    height: 3px;
+    background-color: #FFA630;
 }
 
 .close {
-    color: #aaa;
+    color: #8DB1AB;
     font-size: 28px;
     font-weight: bold;
     position: absolute;
     right: 0;
     top: 0;
-    margin: 1rem 2rem;
+    margin: 2rem 4rem;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    opacity: 0.7;
     text-decoration: none;
     cursor: pointer;
 }
@@ -71,4 +107,10 @@
 
 .more-options {
     margin: 20px 0;
+}
+
+.fa-award {
+    position: relative;
+    left: 13.5rem;
+    top: -2.5rem;
 }
