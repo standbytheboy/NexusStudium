@@ -1,0 +1,74 @@
+/* MODAL DE LOGIN */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    width: max-content;
+    height: max-content;
+    background: #273847;
+    margin: 4rem auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bg-card-progress {
+    color: #8DB1AB;
+    background-color: rgba(0, 0, 0, 0.486);
+    border: 3px solid #8DB1AB;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.bg-card-progress h3 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.card-progress {
+    background-color: black;
+    width: 28rem;
+    height: 15rem;
+    border-radius: 1.5rem;
+    color: #FFA630;
+    flex-direction: column;
+}
+
+.progress-bar {
+    background-color: #10161C80;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem 2rem;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.space {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.more-options {
+    margin: 20px 0;
+}

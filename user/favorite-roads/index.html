@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styleUser.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -42,7 +43,7 @@
                 <div class="user-video flex">Seus Vídeos</div>
             </div>
         </section>
-        <aside class="user-progress flex">
+        <aside class="user-progress flex" id="openModalBtn">
             <div class="progress-title flex">Progresso do Usuário</div>
             <div class="bg-progress">
                 <div class="user-road flex">Edição de Vídeo Profissional para Mídias Sociais</div>
@@ -63,32 +64,32 @@
                     Edição de Vídeo Profissional para Mídias Sociais
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Matemática Aplicada
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
-                </div>
-            </div>
-            <div class="flex roads-row">
-                <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
-                </div>
-                <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
-                </div>
-                <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Programação Orientada a Objetos - Conceitos
                 </div>
             </div>
             <div class="flex roads-row">
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Aprendendo JavaScript com JS
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Do Zero ao Design Digital
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Fotografia para Todos
+                </div>
+            </div>
+            <div class="flex roads-row">
+                <div class="flex road-follow">
+                    React Native - Evoluindo seu Conhecimento
+                </div>
+                <div class="flex road-follow">
+                    -
+                </div>
+                <div class="flex road-follow">
+                    -
                 </div>
             </div>
         </div>
@@ -110,6 +111,38 @@
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content flex">
+            <span class="close">x</span>
+            <div class="bg-card-progress flex">
+                <h3>Em Andamento</h3>
+                <div class="flex">
+                    <div class="card-progress flex">
+                        <div class="progress-bar"></div>
+                        <p>TRILHA</p>
+                        <p>Edição de Vídeo Profissional para Mídias Sociais</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card-progress flex">
+                        <div class="progress-bar"></div>
+                        <p>TRILHA</p>
+                        <p>Edição de Vídeo Profissional para Mídias Sociais</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card-progress flex">
+                        <div class="progress-bar"></div>
+                        <p>TRILHA</p>
+                        <p>Edição de Vídeo Profissional para Mídias Sociais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
 </body>
 
 </html>
