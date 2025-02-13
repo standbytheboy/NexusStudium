@@ -676,14 +676,73 @@ footer{
 }
 
 .nexusChat_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     width: 574px;
     height: 514px;
+    padding: 20px;
     margin: 0 auto;
     border: 1px solid #8DB1AB;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* ------- mensagem do usuário ------ */
+
+#userMessage {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}   
+
+.fa-circle-user {
+    color: #FFA630; 
+    font-size: 40px; 
+    height: 50px;
+    width: 50px;
+    padding: 5px; 
+    background-color: black; 
+    border-radius: 50%;
+}
+
+#userMessageChat {
+    display: flex;
+    align-items: start;
+    padding: 8px;
+    max-width: 100%;
+    border-radius: 15px 0 15px 15px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: #D9D9D9;
+}
+
+/* ------- mensagem do suporte nexus ------ */
+
+#suportMessage {
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+}   
+
+.suport_icon_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#suportMessageChat {
+    display: flex;
+    align-items: start;
+    padding: 8px;
+    max-width: 100%;
+    border-radius: 0 15px 15px 15px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: #8DB1AB;
+}
+
+/* ------- input de mensagem do usuário ------ */
 .nexusChat_message {
     width: 574px;
     margin: 0 auto;
@@ -699,6 +758,7 @@ footer{
     outline: none;
     font-size: 1.6rem;
     border-style: none;
+    resize: none;
 }
 
 .nexusChat_input:focus {
