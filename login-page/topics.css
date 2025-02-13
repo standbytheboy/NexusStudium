@@ -1,0 +1,16 @@
+/* SEÇÃO DE TÓPICOS */
+.topics {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 9rem;
+    gap: 2rem;
+}
+
+.groups {
+    gap: 74px;
+}
+
+.topic-back-btn{
+    margin: 0;
+}

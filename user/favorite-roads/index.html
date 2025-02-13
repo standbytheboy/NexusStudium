@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styleUser.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Trilhas Favoritas</title>
 </head>
 
@@ -17,7 +19,8 @@
         <nav>
             <ul class="grid-header">
                 <li class="menu-btn">
-                    <img class="menu-icon" src="../../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+                    <a href="../../login-page/index.html"><img class="menu-icon" src="../../img/logomarca-png.png"
+                            alt="Logomarca do Nexus Studium"></a>
                 </li>
                 <li class="search-bar">
                     <div>
@@ -38,11 +41,12 @@
             </div>
             <div class="user-name flex">Seu Nome</div>
             <div class="user-settings">
-                <button class="user-setting flex"><a href="../user-information/index.html">Config. da Conta</a></button>
+                <button class="user-setting flex"><a href="../../user-settings/user-information/index.html">Config. da
+                        Conta</a></button>
                 <div class="user-video flex">Seus Vídeos</div>
             </div>
         </section>
-        <aside class="user-progress flex">
+        <aside class="user-progress flex" id="openModalBtn">
             <div class="progress-title flex">Progresso do Usuário</div>
             <div class="bg-progress">
                 <div class="user-road flex">Edição de Vídeo Profissional para Mídias Sociais</div>
@@ -63,32 +67,32 @@
                     Edição de Vídeo Profissional para Mídias Sociais
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Matemática Aplicada
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
-                </div>
-            </div>
-            <div class="flex roads-row">
-                <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
-                </div>
-                <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
-                </div>
-                <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Programação Orientada a Objetos - Conceitos
                 </div>
             </div>
             <div class="flex roads-row">
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Aprendendo JavaScript com JS
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Do Zero ao Design Digital
                 </div>
                 <div class="flex road-follow">
-                    Edição de Vídeo Profissional para Mídias Sociais
+                    Fotografia para Todos
+                </div>
+            </div>
+            <div class="flex roads-row">
+                <div class="flex road-follow">
+                    React Native - Evoluindo seu Conhecimento
+                </div>
+                <div class="flex road-follow">
+                    -
+                </div>
+                <div class="flex road-follow">
+                    -
                 </div>
             </div>
         </div>
@@ -110,6 +114,58 @@
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content flex">
+            <span class="close">x</span>
+            <div class="bg-card-progress flex">
+                <h3>Em Andamento</h3>
+                <div class="all-cards flex">
+                    <div>
+                        <div class="card-progress flex">
+                            <div class="progress flex">
+                                <div class="progress-bar">
+                                    <div class="w-70"></div>
+                                </div>
+                            </div>
+                            <p>TRILHA</p>
+                            <p>Edição de Vídeo Profissional para Mídias Sociais</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-progress flex">
+                            <div class="progress flex">
+                                <div class="progress-bar">
+                                    <div class="w-70"></div>
+                                </div>
+                            </div>
+                            <p>TRILHA</p>
+                            <p>Programação Orientada a Objetos - Conceitos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-card-progress flex">
+                <h3>Concluído</h3>
+                <div class="all-cards flex">
+                    <div>
+                        <div class="card-progress flex">
+                            <i class="fa-solid fa-award fa-2xl" style="color: #3adb42;"></i>
+                            <div class="progress flex">
+                                <div class="progress-bar">
+                                    <div class="w-100"></div>
+                                </div>
+                            </div>
+                            <p>TRILHA</p>
+                            <p>Matemática Aplicada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
 </body>
 
 </html>

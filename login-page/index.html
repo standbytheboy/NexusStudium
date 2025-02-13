@@ -15,7 +15,8 @@
     <header>
         <nav>
             <ul class="nav flex">
-                <li class="nav-btn flex"><img src="../img/logomarca-png.png" alt="Logomarca NexusStudium" width="100px"></li>
+                <li class="nav-btn flex"><img src="../img/logomarca-png.png" alt="Logomarca NexusStudium" width="100px">
+                </li>
                 <li class="search-bar">
                     <div>
                         <form class="bg-search">
@@ -23,66 +24,64 @@
                                         src="../img/searchIcon.svg" alt=""></i></button>
                             <input class="search-input" type="text" placeholder="O que você quer aprender?">
                         </form>
-                    </div></li>
-                    <li class="user-button">
-                        <a href="../user/historic/index.html"><div class="flex user-page">
+                    </div>
+                </li>
+                <li class="user-button">
+                    <a href="../user/historic/index.html">
+                        <div class="flex user-page">
                             <i class="fa-solid fa-user fa-2x"></i>
-                        </div></a>
-                    </li>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    
+
     <main class="grid-container">
-        <div class="carrossel flex">
-            <div class="div-container">
-                <div class="slide-div flex" id="slide-1">
-                    <div class="bg flex" id="bg4">
-                        <h2 class="carrossel-title">Trilha de Estudos</h2>
-                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                            experientes</p>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="panel flex active">
+                <h3 class="carrossel-title">Trilha</h3>
+                <p class="carrossel-sub">Se desenvolva através de um caminho pré-definido por profissionais experientes
+                </p>
 
-                <div class="slide-div flex" id="slide-2">
-                    <div class="bg flex" id="bg5">
-                        <h2 class="carrossel-title">Trilha de Estudos</h2>
-                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                            experientes</p>
-                    </div>
-                </div>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Artigos</h3>
+                <p class="carrossel-sub">Aprenda através de textos feitos pela comunidade</p>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Exercícios</h3>
+                <p class="carrossel-sub">Pratique seus conhecimentos através de exercícios</p>
 
-                <div class="slide-div flex" id="slide-3">
-                    <div class="bg flex" id="bg6">
-                        <h2 class="carrossel-title">Trilha de Estudos</h2>
-                        <p class="carrossel-subtitle">Se desenvolva através de um caminho pré-definido por profissionais
-                            experientes</p>
-                    </div>
-                </div>
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Comunidade</h3>
+                <p class="carrossel-sub">Retire suas dúvidas e expanda seus conhecimentos com auxilio de outros usuários
+                </p>
+
+            </div>
+            <div class="panel flex">
+                <h3 class="carrossel-title">Em alta</h3>
+                <p class="carrossel-sub">Busque os vídeos e trilhas mais vistos</p>
+
             </div>
         </div>
 
-        <aside class="filter">
-            <div class="main-filter"><i class="fa-solid fa-filter"></i>Em alta
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </aside>
-
         <aside class="topics">
             <div class="gp-1">
-                <div class="topic-btn">ENEM</div>
-                <div class="topic-btn">Programação</div>
-                <div class="topic-btn">Gastronomia</div>
+                <div><a class="topic-btn" href="./topics.html">ENEM</a></div>
+                <div><a class="topic-btn" href="">Arquitetura</a></div>
+                <div><a class="topic-btn" href="">Gastronomia</a></div>
             </div>
             <div class="gp-2">
-                <div class="topic-btn">Arquitetura</div>
-                <div class="topic-btn">Direito</div>
-                <div class="topic-btn">Mecânica</div>
+                <div><a class="topic-btn" href="./topics.html">Programação</a></div>
+                <div><a class="topic-btn" href="">Direito</a></div>
+                <div><a class="topic-btn" href="">Mecânica</a></div>
             </div>
             <div class="gp-3">
-                <div class="topic-btn">Engenharia</div>
-                <div class="topic-btn">Medicina</div>
-                <div class="topic-btn">Idiomas</div>
+                <div><a class="topic-btn" href="">Engenharia</a></div>
+                <div><a class="topic-btn" href="">Medicina</a></div>
+                <div><a class="topic-btn" href="">Idiomas</a></div>
             </div>
         </aside>
     </main>
@@ -103,7 +102,7 @@
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
 
-        <script src="./modal.js"></script>
+        <script src="../script.js"></script>
     </footer>
 </body>
 

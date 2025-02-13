@@ -100,6 +100,10 @@ body {
     margin-top: 37px;
 }
 
+.user-button a {
+    color: black;
+}
+
 .user-page{
     width: 67px;
     height: 67px;
@@ -162,7 +166,7 @@ body {
 }
 
 .select-btn:hover{
-    background-color: #5D5791;
+    background-color: black;
     border: 1px solid #8DB1AB;
     padding-left: 35px;
 }
