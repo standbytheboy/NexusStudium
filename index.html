@@ -9,14 +9,145 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0"
+        />
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+        <script src="https://unpkg.com/akar-icons-fonts"></script>
     <title>Nexus Studium</title>
 </head>
 
 <body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+          <img src="./img/logomarca-png.png" width="150px" height="150px"/>
+        </header>
+        <ul>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-home-alt1"></i>
+              <p>Início</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-dashboard"></i>
+              <p>Quem eu sigo</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-gear"></i>
+              <p>Artigos</p>
+              <i class="ai-chevron-down-small"></i>
+            </button>
+            <div class="sub-menu">
+              <ul>
+                <li>
+                  <button type="button">Display</button>
+                </li>
+                <li>
+                  <button type="button">Appearance</button>
+                </li>
+                <li>
+                  <button type="button">Preferences</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-folder-add"></i>
+              <p>Exercícios</p>
+              <i class="ai-chevron-down-small"></i>
+            </button>
+            <div class="sub-menu">
+              <ul>
+                <li>
+                  <button type="button">Article</button>
+                </li>
+                <li>
+                  <button type="button">Document</button>
+                </li>
+                <li>
+                  <button type="button">Video</button>
+                </li>
+                <li>
+                  <button type="button">Presentation</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-person"></i>
+              <p>Comunidade</p>
+              <i class="ai-chevron-down-small"></i>
+            </button>
+            <div class="sub-menu">
+              <ul>
+                <li>
+                  <button type="button">Avatar</button>
+                </li>
+                <li>
+                  <button type="button">Theme</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-bell"></i>
+              <p>Histórico</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-cart"></i>
+              <p>Trilhas Favoritas</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-lock-on"></i>
+              <p>Progresso</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-lock-on"></i>
+              <p>Ajuda</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-lock-on"></i>
+              <p>Feedback</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-lock-on"></i>
+              <p>Idiomas</p>
+            </button>
+          </li>
+        </ul>
+      </aside>
     <header>
         <nav>
             <ul class="nav flex">
-                <li class="nav-btn flex"><img src="../img/logomarca-png.png" alt="Logomarca NexusStudium" width="100px">
+                <li class="nav-btn flex"><img id="showMenu" src="../img/logomarca-png.png" alt="Logomarca NexusStudium" width="100px">
                 </li>
                 <li class="search-bar">
                     <div>
