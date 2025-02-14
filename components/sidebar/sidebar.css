@@ -16,6 +16,13 @@
     backdrop-filter: blur(20px);
     transition: width 0.4s;
     z-index: 99;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .ocult-sidebar {
