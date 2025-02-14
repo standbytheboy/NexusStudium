@@ -487,9 +487,100 @@ footer{
 }
 
 
+/* ============================= TESTE PAINEL QUESTION FAQ ====================*/
+
+.faq-container {
+    display: block;  /* <---------- aqui tem que alterar o display para block*/
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 auto;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .faq-container h2 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 38px;
+    color: #8DB1AB;
+  }
+  
+  .faq {
+    background-color: #8DB1AB;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 30px;
+    width: 656px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  
+  .faq.active2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-title {
+    margin: 0 35px 0 0;
+  }
+  
+  .faq-text {
+    display: none;
+    font-size: 1.2rem;
+    margin: 30px 0 0;
+  }
+  
+  .faq.active2 .faq-text {
+    display: block;
+  }
+  
+  .faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .faq-toggle:focus {
+    outline: 0;
+  }
+  
+  .faq-toggle .fa-times {
+    display: none;
+  }
+  
+  .faq.active2 .faq-toggle .fa-times {
+    color: #fff;
+    display: block;
+  }
+  
+  .faq.active2 .faq-toggle .fa-chevron-down {
+    display: none;
+  }
+  
+  .faq.active2 .faq-toggle {
+    background-color: #086788
+  }
+
+
 /*----- Frequentes-----*/
 .painel_question {
-    display: flex;  /* <---------- aqui tem que alterar o display para flex*/
+    display: none;  /* <---------- aqui tem que alterar o display para flex*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -834,3 +925,6 @@ footer{
 #btnSendChatNexus:hover {
     box-shadow: 1px 1px 5px gray;
 }
+
+/* ------- TESTE FAQ ------ */
+
