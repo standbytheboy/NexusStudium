@@ -172,6 +172,7 @@
         height: 332px;
         grid-column: 7 / 12;
         flex-wrap: wrap;
+        cursor: pointer;
     }
 
     .progress-title {
