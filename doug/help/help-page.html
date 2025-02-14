@@ -34,6 +34,7 @@
 
     <main class="container">
         <div class="main_help">
+            
             <div class="painel_help">
                 <h2>AJUDA</h2>
                 <nav>
@@ -48,7 +49,7 @@
             </div>
             <div class="painel_question">
                 <h2>Perguntas Frequentes</h2>
-                <nav>
+
                     <ul class="question_list">
                         <li>Como criar minha conta nexus? <i class="fa-solid fa-circle-chevron-down" style="color: #086788; font-size: 30px;"></i></li>
                         <li>Como realizar a trilha de conhecimento? <i class="fa-solid fa-circle-chevron-down" style="color: #086788; font-size: 30px;"></i></li>
@@ -57,7 +58,7 @@
                         <li>Os cursos do Nexus possuem certificado? <i class="fa-solid fa-circle-chevron-down" style="color: #086788; font-size: 30px;"></i></li>
                         <li>Como participar da comunidade? <i class="fa-solid fa-circle-chevron-down" style="color: #086788; font-size: 30px;"></i></li>
                     </ul>
-                </nav>
+        
 
             </div>
 
@@ -73,19 +74,18 @@
                         Ratione doloremque vero voluptatem, perspiciatis provident voluptas labore porro natus. Dolor aliquam doloremque dicta corporis deserunt voluptatem dolores perspiciatis aliquid quod tenetur. Provident officia ad cupiditate hic sequi a magni.
                         Dicta fuga recusandae numquam esse voluptatibus. Obcaecati eaque quidem minus quod adipisci eveniet dolor voluptatum libero ea provident sapiente, velit sequi temporibus. Et in culpa placeat magni suscipit laboriosam! Eligendi.
                         Nobis debitis nam dolorem praesentium sed quam, ad, nesciunt tempore impedit quas voluptatibus consequuntur sequi velit! Neque quidem ipsam consectetur architecto incidunt facere culpa officiis suscipit laboriosam, repellat commodi at.
-                        Sunt, accusantium modi. Voluptas ipsum tempore, libero temporibus natus, voluptatem amet facere provident quae commodi voluptatibus ex quibusdam accusantium. Cupiditate quidem ea ipsa. Quaerat velit veniam inventore quam distinctio natus?
-                        Reiciendis quibusdam nostrum nisi illo sunt unde porro ex rem nulla quis, saepe facilis corporis maxime maiores voluptate, cum sequi enim expedita quaerat a et ab. Velit debitis explicabo autem?
-                        Quaerat, quisquam animi. Reiciendis eum ab aut amet quidem qui voluptas possimus. Vel, distinctio totam. Minima consectetur quas nam qui, ex voluptatem architecto veniam similique nihil asperiores laudantium provident delectus!
+                        Sunt, accusantium modi. Voluptas ipsum tempore, libero temporibus natus, voluptatem amet facere provident quae commodi voluptatibus ex quibusdam accusantium.
 
                     </div>
                 </div>
     
             </div>
-            <div class="painel_feedback">
+
+            <div id="painel_feedback">
                 <h2>Feedback</h2>
                 <div class="feedback_content">
                     <div class="feedback_top">
-                        <h2>NOS DEIXE UM FEEDBACK!</h2>
+                        <h2 style="color: black;">NOS DEIXE UM FEEDBACK!</h2>
                     </div>
 
                     <div class="feedback_text">
@@ -93,7 +93,7 @@
                         <input class="input_info" type="text" placeholder="TELEFONE">
                         <input class="input_info" type="text" placeholder="EMAIL">
 
-                        <input class="input_feedback" type="text" placeholder="DIGITE AQUI SUA MENSAGEM">
+                        <textarea id="input_feedback" placeholder="DIGITE AQUI SUA MENSAGEM..."></textarea>
 
                         <div class="right"><button class="btnFeedback">Enviar</button></div>
                     </div>
@@ -102,8 +102,7 @@
                 
             </div>
 
-
-            <div class="painel_nexusChat">
+            <div id="painel_nexusChat">
                 <div class="nexusChat_top">
                     <h2><i class="fa-solid fa-circle-chevron-left" style="color: white; padding-right: 10px;"></i>NexusChat</h2>
                 </div>
@@ -116,7 +115,7 @@
                                     </p>
                             </div>
                         
-                            <i id="userIconChat" class="fa-solid fa-circle-user"></i>
+                            <i id="userIconChat" class="fa-solid fa-circle-user back_circle" style="color: #FFA630;font-size: 40px;height: 50px; width: 50px;"></i>
                         </div>
 
                         <div id="suportMessage">
@@ -146,8 +145,6 @@
             </div>
         </div>
 
-
-
     </main>
 
     <footer>
@@ -167,3 +164,5 @@
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
     </footer>
+
+</body>

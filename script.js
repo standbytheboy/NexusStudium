@@ -64,3 +64,13 @@ const onClick = (item) => {
     item.classList.remove("active");
   }
 };
+
+// ==================== MENU AJUDA / FAQ  ====================
+
+const toggles = document.querySelectorAll('.faq-toggle')
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+})
