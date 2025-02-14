@@ -28,99 +28,64 @@
         </header>
         <ul>
             <li>
-                <a href="#"><button type="button" onclick="onClick(this)">
+                <a href="../../login-page/index.html"><button type="button" onclick="onClick(this)">
                         <i class="ai-home-alt1"></i>
                         <p>Início</p>
                     </button></a>
             </li>
             <li>
-                <a href="../user/who-follow/index.html">
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-person-check"></i>
+                    <p>Perfil</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../../user/historic/index.html">
+                                <button type="button">Histórico</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../user/who-follow/index.html">
+                                <button type="button">Quem eu sigo</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../user/favorite-roads/index.html">
+                                <button type="button">Trilhas favoritas</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <!-- ============= MARCOS =============== -->
+                <a href="../../doug/article/article.html">
                     <button type="button" onclick="onClick(this)">
-                        <i class="ai-person-check"></i>
-                        <p>Quem eu sigo</p>
+                        <i class="ai-book-open"></i>
+                        <p>Artigos</p>
                     </button>
                 </a>
             </li>
             <li>
-                <button type="button" onclick="onClick(this)">
-                    <i class="ai-book-open"></i>
-                    <p>Artigos</p>
-                    <i class="ai-chevron-down-small"></i>
-                </button>
-                <div class="sub-menu">
-                    <ul>
-                        <li>
-                            <button type="button">Display</button>
-                        </li>
-                        <li>
-                            <button type="button">Appearance</button>
-                        </li>
-                        <li>
-                            <button type="button">Preferences</button>
-                        </li>
-                    </ul>
-                </div>
+                <a href="../../doug/exercises/exercises.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-folder-add"></i>
+                        <p>Exercícios</p>
+                    </button>
+                </a>
             </li>
             <li>
-                <button type="button" onclick="onClick(this)">
-                    <i class="ai-folder-add"></i>
-                    <p>Exercícios</p>
-                    <i class="ai-chevron-down-small"></i>
-                </button>
-                <div class="sub-menu">
-                    <ul>
-                        <li>
-                            <button type="button">Article</button>
-                        </li>
-                        <li>
-                            <button type="button">Document</button>
-                        </li>
-                        <li>
-                            <button type="button">Video</button>
-                        </li>
-                        <li>
-                            <button type="button">Presentation</button>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a href="../doug/comunity/comunity.html">
+                <a href="../../doug/comunity/comunity.html">
                     <button type="button" onclick="onClick(this)">
                         <i class="ai-people-group"></i>
                         <p>Comunidade</p>
-                        <i class="ai-chevron-down-small"></i>
-                    </button>
-                </a>
-                <div class="sub-menu">
-                    <ul>
-                        <li>
-                            <button type="button">Avatar</button>
-                        </li>
-                        <li>
-                            <button type="button">Theme</button>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a href="../user/historic/index.html">
-                    <button type="button" onclick="onClick(this)">
-                        <i class="ai-history"></i>
-                        <p>Histórico</p>
                     </button>
                 </a>
             </li>
             <li>
-                <a href="../user/favorite-roads/index.html">
-                    <button type="button" onclick="onClick(this)">
-                        <i class="ai-heart"></i>
-                        <p>Trilhas Favoritas</p>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="../user/historic/index.html">
+                <a href="../../user/historic/index.html">
                     <button type="button" onclick="onClick(this)">
                         <i class="ai-statistic-up"></i>
                         <p>Progresso</p>
@@ -128,18 +93,36 @@
                 </a>
             </li>
             <li>
-                <a href="./doug/help/help-page.html">
-                    <button type="button" onclick="onClick(this)">
-                        <i class="ai-question"></i>
-                        <p>Ajuda</p>
-                    </button>
-                </a>
-            </li>
-            <li>
                 <button type="button" onclick="onClick(this)">
-                    <i class="ai-circle-plus"></i>
-                    <p>Feedback</p>
+                    <i class="ai-question"></i>
+                    <p>Ajuda</p>
+                    <i class="ai-chevron-down-small"></i>
+
                 </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Perguntas Frequentes</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Sobre</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Feedback</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Suporte</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <button type="button" onclick="onClick(this)">
@@ -148,7 +131,7 @@
                 </button>
             </li>
             <li>
-                <a href="../user-settings/user-information/index.html">
+                <a href="../../user-settings/user-information/index.html">
                     <button type="button" onclick="onClick(this)">
                         <i class="ai-gear"></i>
                         <p>Configurações</p>
@@ -192,16 +175,24 @@
                 <div class="user-name flex"><em>NOME DO USUÁRIO</em></div>
             </div>
             <div class="flex select-btn"><i class="fa-regular fa-address-card fa-2x"></i>
-                <a href="#"><p>Informações Pessoais</p></a>
+                <a href="#">
+                    <p>Informações Pessoais</p>
+                </a>
             </div>
             <div class="flex select-btn"><i class="fa-solid fa-shield-halved fa-2x"></i>
-               <a href="../user-security/index.html"><p>Segurança</p></a>
+                <a href="../user-security/index.html">
+                    <p>Segurança</p>
+                </a>
             </div>
             <div class="flex select-btn"><i class="fa-solid fa-handshake-angle fa-2x"></i>
-                <a href="../user-signature/index.html"><p>Assinatura Nexus</p></a>
+                <a href="../user-signature/index.html">
+                    <p>Assinatura Nexus</p>
+                </a>
             </div>
             <div class="flex select-btn"><i class="fa-regular fa-circle-play fa-2x"></i>
-                <a href="../user-video-player/index.html"><p>Reprodução de Vídeos</p></a>
+                <a href="../user-video-player/index.html">
+                    <p>Reprodução de Vídeos</p>
+                </a>
             </div>
         </section>
         <aside class="flex right-card">
@@ -238,15 +229,13 @@
                         <div class="flex bg-half-label">
                             <label for="tel-1">Telefone 1</label>
                         </div>
-                        <input class="half-input" type="tel" name="tel" id="tel-1"
-                            placeholder="(00) 91234-5678">
+                        <input class="half-input" type="tel" name="tel" id="tel-1" placeholder="(00) 91234-5678">
                     </div>
                     <div class="row">
                         <div class="flex bg-half-label">
                             <label for="tel-2">Telefone 2</label>
                         </div>
-                        <input class="half-input" type="tel" name="tel" id="tel-2"
-                            placeholder="(00) 91234-5678">
+                        <input class="half-input" type="tel" name="tel" id="tel-2" placeholder="(00) 91234-5678">
                     </div>
                 </div>
 
@@ -257,8 +246,7 @@
                 <div class="flex bg-label">
                     <label for="email_rec2">Email Recuperação 2</label>
                 </div>
-                <input class="full-input" type="text" name="email" id="email_rec2"
-                    placeholder="exemplo@email.com">
+                <input class="full-input" type="text" name="email" id="email_rec2" placeholder="exemplo@email.com">
                 <input class="btn-form" type="submit" value="Salvar Alterações">
             </form>
         </aside>
@@ -282,8 +270,8 @@
         </div>
     </footer>
 
-    <script src="../../components/sidebar/sidebar.js"></script>
     <script src="../../script.js"></script>
+    <script src="../../components/sidebar/sidebar.js"></script>
 </body>
 
 </html>
