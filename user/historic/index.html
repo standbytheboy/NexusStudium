@@ -15,10 +15,128 @@
 </head>
 
 <body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+            <img src="./img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+            <li>
+                <a href="./login-page/index.html"><button type="button" onclick="onClick(this)">
+                        <i class="ai-home-alt1"></i>
+                        <p>Início</p>
+                    </button></a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-person-check"></i>
+                    <p>Perfil</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="./user/historic/index.html">
+                                <button type="button">Histórico</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./user/who-follow/index.html">
+                                <button type="button">Quem eu sigo</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./user/favorite-roads/index.html">
+                                <button type="button">Trilhas favoritas</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <!-- ============= MARCOS =============== -->
+                <a href="./doug/article/article.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-book-open"></i>
+                        <p>Artigos</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="./doug/exercises/exercises.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-folder-add"></i>
+                        <p>Exercícios</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="./doug/comunity/comunity.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-people-group"></i>
+                        <p>Comunidade</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="./user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-statistic-up"></i>
+                        <p>Progresso</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-question"></i>
+                    <p>Ajuda</p>
+                    <i class="ai-chevron-down-small"></i>
+
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="./doug/help/help-page.html">
+                                <button type="button">Perguntas Frequentes</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./doug/help/help-page.html">
+                                <button type="button">Sobre</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./doug/help/help-page.html">
+                                <button type="button">Feedback</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./doug/help/help-page.html">
+                                <button type="button">Suporte</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-language"></i>
+                    <p>Idiomas</p>
+                </button>
+            </li>
+            <li>
+                <a href="./user-settings/user-information/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-gear"></i>
+                        <p>Configurações</p>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </aside>
     <header>
         <nav>
             <ul class="grid-header">
-                <li class="menu-btn">
+                <li class="menu-btn" id="showMenu">
                     <img class="menu-icon" src="../../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
                 </li>
                 <li class="search-bar">
@@ -40,7 +158,8 @@
             </div>
             <div class="user-name flex">Seu Nome</div>
             <div class="user-settings">
-                <button class="user-setting flex"><a href="../../user-settings/user-information/index.html">Config. da Conta</a></button>
+                <button class="user-setting flex"><a href="../../user-settings/user-information/index.html">Config. da
+                        Conta</a></button>
                 <div class="user-video flex">Seus Vídeos</div>
             </div>
         </section>
@@ -61,22 +180,30 @@
         <hr>
         <div class="flex video-cards">
             <div class="bg-card">
-                <div class="flex video"><img src="https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumb do Vídeo"></div>
+                <div class="flex video"><img
+                        src="https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Thumb do Vídeo"></div>
                 <div class="flex title-video">Usando o Adobe Premiere Pro</div>
                 <div class="flex hour-view">Visto hoje, 15h32</div>
             </div>
             <div class="bg-card">
-                <div class="flex video"><img src="https://images.unsplash.com/photo-1607112812619-182cb1c7bb61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumb do Vídeo"></div>
+                <div class="flex video"><img
+                        src="https://images.unsplash.com/photo-1607112812619-182cb1c7bb61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Thumb do Vídeo"></div>
                 <div class="flex title-video">Melhores atalhos para editar</div>
                 <div class="flex hour-view">Visto hoje, 13h01</div>
             </div>
             <div class="bg-card">
-                <div class="flex video"><img src="https://images.unsplash.com/photo-1627773167916-f52e5113f0d3?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumb do Vídeo"></div>
+                <div class="flex video"><img
+                        src="https://images.unsplash.com/photo-1627773167916-f52e5113f0d3?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Thumb do Vídeo"></div>
                 <div class="flex title-video">Masterizando o som do seu vídeo</div>
                 <div class="flex hour-view">Visto hoje, 12h47</div>
             </div>
             <div class="bg-card">
-                <div class="flex video"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumb do Vídeo"></div>
+                <div class="flex video"><img
+                        src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Thumb do Vídeo"></div>
                 <div class="flex title-video">Como editar vídeos para o youtube</div>
                 <div class="flex hour-view">Visto ontem, 14h57</div>
             </div>
@@ -151,7 +278,6 @@
     </div>
 
     <script src="../../script.js"></script>
-    <script src="../../components/sidebar/sidebar.js"></script>
 </body>
 
 </html>
