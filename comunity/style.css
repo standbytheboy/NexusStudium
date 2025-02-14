@@ -1,0 +1,88 @@
+:root {
+    font-size: 62.5%;
+}
+
+main {
+    margin-bottom: 4rem;
+}
+
+.main-card {
+    flex-direction: column;
+    max-width: 120rem;
+    height: fit-content;
+    padding: 3rem 6rem;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.main-card, .username, .doubt, .write, .write-input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #8DB1AB;
+    border-radius: 2rem;
+    color: #8DB1AB;
+    font-size: 2rem;
+}
+
+.username {
+    text-align: center;
+}
+
+.username, .doubt {
+    padding: 1rem 4%;
+    width: fit-content;
+}
+
+.doubt-img {
+    max-width: 70rem;
+    max-height: 50rem;
+}
+
+.write {
+    margin: 0 auto;
+    max-width: 120rem;
+    max-height: fit-content;
+    padding: 1.5rem 2rem;
+}
+
+.text-decoration {
+    background-color: black;
+    gap: 2rem;
+    border-radius: 2rem;
+    justify-content: left;
+    padding: 1.2rem 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.type {
+    justify-content: space-between  ;
+}
+
+.form-input {
+    background-color: black;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    max-width: fit-content;
+}
+
+.write-input {
+    width: 70rem;
+    background-color: #69788425;
+    padding: .5rem 2.5rem;
+    font-size: 1.6rem;
+}
+
+.write-input::placeholder {
+    color: #8DB1AB;
+}
+
+.ai-send {
+    background-color: black;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+}
+
+.links {
+    font-size: 1.8rem;
+}
