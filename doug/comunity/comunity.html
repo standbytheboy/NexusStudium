@@ -1,19 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Comunidade</title>
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+
+<head>
+    <link rel="icon" href="../../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
-    
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+            <img src="../../img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+            <li>
+                <a href="../../login-page/index.html"><button type="button" onclick="onClick(this)">
+                        <i class="ai-home-alt1"></i>
+                        <p>Início</p>
+                    </button></a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-person-check"></i>
+                    <p>Perfil</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../../user/historic/index.html">
+                                <button type="button">Histórico</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../user/who-follow/index.html">
+                                <button type="button">Quem eu sigo</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../user/favorite-roads/index.html">
+                                <button type="button">Trilhas favoritas</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <!-- ============= MARCOS =============== -->
+                <a href="../../doug/article/article.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-book-open"></i>
+                        <p>Artigos</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../../doug/exercises/exercises.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-folder-add"></i>
+                        <p>Exercícios</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../../doug/comunity/comunity.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-people-group"></i>
+                        <p>Comunidade</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../../user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-statistic-up"></i>
+                        <p>Progresso</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-question"></i>
+                    <p>Ajuda</p>
+                    <i class="ai-chevron-down-small"></i>
+
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Perguntas Frequentes</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Sobre</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Feedback</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Suporte</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-language"></i>
+                    <p>Idiomas</p>
+                </button>
+            </li>
+            <li>
+                <a href="../../user-settings/user-information/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-gear"></i>
+                        <p>Configurações</p>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
     <header>
         <nav>
             <ul class="grid-header">
                 <li class="menu-btn">
-                    <img class="menu-icon" src="../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+                    <img id="showMenu" class="menu-icon" src="../img/logomarca-png.png"
+                        alt="Logomarca do Nexus Studium">
                 </li>
                 <li class="search-bar">
                     <div>
@@ -37,9 +169,12 @@
         <div class="painel_nav">
             <nav>
                 <ul>
-                    <li><i class="fa-solid fa-list-check" style="color: #8DB1AB; margin-right: 30px"></i><a href="#">Assuntos</a></li>
-                    <li><i class="fa-solid fa-circle-question" style="color: #8DB1AB; margin-right: 30px;"></i><a href="">Dúvidas recentes</a></li>
-                    <li><i class="fa-solid fa-bookmark" style="color: #8DB1AB; margin-right: 30px"></i><a href="">Salvos</a></li>
+                    <li><i class="fa-solid fa-list-check" style="color: #8DB1AB; margin-right: 30px"></i><a
+                            href="#">Assuntos</a></li>
+                    <li><i class="fa-solid fa-circle-question" style="color: #8DB1AB; margin-right: 30px;"></i><a
+                            href="">Dúvidas recentes</a></li>
+                    <li><i class="fa-solid fa-bookmark" style="color: #8DB1AB; margin-right: 30px"></i><a
+                            href="">Salvos</a></li>
 
                 </ul>
             </nav>
@@ -48,7 +183,9 @@
         <div class="painel_content">
             <div class="painel_content_cabecalho">
                 <h1>Comunidade</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit molestias provident id recusandae ea molestiae fuga at cupiditate, animi deserunt voluptates ex, sed, quidem non temporibus adipisci cum porro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit molestias
+                    provident id recusandae ea molestiae fuga at cupiditate, animi deserunt voluptates ex, sed, quidem
+                    non temporibus adipisci cum porro.</p>
             </div>
             <hr>
 
@@ -56,16 +193,19 @@
                 <div class="content_iten_title_icons">
                     <a href="#" class="content_iten_title">Tecnologia para Programadores</a>
                     <div class="content_iten_icon">
-                        <i class="fa-solid fa-circle-check" style="color: #8DB1AB; font-size: 28px; margin-right: 10px; "></i>
+                        <i class="fa-solid fa-circle-check"
+                            style="color: #8DB1AB; font-size: 28px; margin-right: 10px; "></i>
                         <i class="fa-solid fa-fire" style="color: orange; font-size: 28px;"></i>
                     </div>
                 </div>
-                <p>Autor: <a href="#">Junim pro do PHP</a></p> 
+                <p>Autor: <a href="#">Junim pro do PHP</a></p>
 
                 <div class="review_iten">
-                    <button><i class="fa-regular fa-thumbs-up" style="color: #8DB1AB; font-size: 30px; margin-right: 10px; background: 0;"></i></button>
+                    <button><i class="fa-regular fa-thumbs-up"
+                            style="color: #8DB1AB; font-size: 30px; margin-right: 10px; background: 0;"></i></button>
                     <p style="margin-right: 30px;">15K</p>
-                    <button><i class="fa-regular fa-comment" style="color: #8DB1AB; font-size: 30px; margin-right: 10px;"></i></button>
+                    <button><i class="fa-regular fa-comment"
+                            style="color: #8DB1AB; font-size: 30px; margin-right: 10px;"></i></button>
                     <p>15K</p>
                 </div>
                 <hr>
@@ -75,16 +215,19 @@
                 <div class="content_iten_title_icons">
                     <a href="#" class="content_iten_title">Tecnologia para Programadores</a>
                     <div class="content_iten_icon">
-                        <i class="fa-solid fa-circle-check" style="color: #8DB1AB; font-size: 28px; margin-right: 10px; "></i>
+                        <i class="fa-solid fa-circle-check"
+                            style="color: #8DB1AB; font-size: 28px; margin-right: 10px; "></i>
                         <i class="fa-solid fa-fire" style="color: orange; font-size: 28px;"></i>
                     </div>
                 </div>
-                <p>Autor: <a href="#">Junim pro do PHP</a></p> 
+                <p>Autor: <a href="#">Junim pro do PHP</a></p>
 
                 <div class="review_iten">
-                    <button><i class="fa-regular fa-thumbs-up" style="color: #8DB1AB; font-size: 30px; margin-right: 10px; background: 0;"></i></button>
+                    <button><i class="fa-regular fa-thumbs-up"
+                            style="color: #8DB1AB; font-size: 30px; margin-right: 10px; background: 0;"></i></button>
                     <p style="margin-right: 30px;">15K</p>
-                    <button><i class="fa-regular fa-comment" style="color: #8DB1AB; font-size: 30px; margin-right: 10px;"></i></button>
+                    <button><i class="fa-regular fa-comment"
+                            style="color: #8DB1AB; font-size: 30px; margin-right: 10px;"></i></button>
                     <p>15K</p>
                 </div>
                 <hr>
@@ -111,5 +254,7 @@
             <p>Copyright &copy; Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="../../components/sidebar/sidebar.js"></script>
 </body>
+
 </html>
