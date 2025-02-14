@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="./search-page.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <title>Nexus Studium</title>
+</head>
+
+<body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+            <img src="../img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+            <li>
+                <a href="../login-page/index.html"><button type="button" onclick="onClick(this)">
+                        <i class="ai-home-alt1"></i>
+                        <p>Início</p>
+                    </button></a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-person-check"></i>
+                    <p>Perfil</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../user/historic/index.html">
+                                <button type="button">Histórico</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../user/who-follow/index.html">
+                                <button type="button">Quem eu sigo</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../user/favorite-roads/index.html">
+                                <button type="button">Trilhas favoritas</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <!-- ============= MARCOS =============== -->
+                <a href="../doug/article/article.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-book-open"></i>
+                        <p>Artigos</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../doug/exercises/exercises.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-folder-add"></i>
+                        <p>Exercícios</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../doug/comunity/comunity.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-people-group"></i>
+                        <p>Comunidade</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-statistic-up"></i>
+                        <p>Progresso</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-question"></i>
+                    <p>Ajuda</p>
+                    <i class="ai-chevron-down-small"></i>
+
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Perguntas Frequentes</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Sobre</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Feedback</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Suporte</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-language"></i>
+                    <p>Idiomas</p>
+                </button>
+            </li>
+            <li>
+                <a href="../user-settings/user-information/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-gear"></i>
+                        <p>Configurações</p>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <ul class="nav flex">
+                <li class="nav-btn flex"><img id="showMenu" src="../img/logomarca-png.png" alt="Logomarca NexusStudium"
+                        width="100px">
+                </li>
+                <li class="search-bar">
+                    <div>
+                        <form class="bg-search">
+                            <button title="btn" class="search-button" type="submit"><i class="search-icon"><img
+                                        src="../img/searchIcon.svg" alt=""></i></button>
+                            <input class="search-input" type="text" placeholder="O que você quer aprender?">
+                        </form>
+                    </div>
+                </li>
+                <li class="user-button">
+                    <a href="../user/historic/index.html">
+                        <div class="flex user-page">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="road">
+                <h2>Em Alta</h2>
+                <div class="videos flex">
+                    <i class="ai-chevron-left"></i>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Programando do zero</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Iniciando PHP</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">MySQL na prática</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Tabelas e Banco de Dados</p>
+                    </div>
+                    <i class="ai-chevron-right"></i>
+                </div>
+            </div>
+            <div class="road">
+                <h2>Mais avaliados</h2>
+                <div class="videos flex">
+                    <i class="ai-chevron-left"></i>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Produtividade como DEV</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Conceito de Classes</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">React Native</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Criando seu portfólio</p>
+                    </div>
+                    <i class="ai-chevron-right"></i>
+                </div>
+            </div>
+            <div class="road">
+                <h2>Geral</h2>
+                <div class="videos flex">
+                    <i class="ai-chevron-left"></i>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Produtividade como DEV</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Conceito de Classes</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">React Native</p>
+                    </div>
+                    <div class="choice">
+                        <div class="video"><img src="" alt=""></div>
+                        <p class="video-title flex">Criando seu portfólio</p>
+                    </div>
+                    <i class="ai-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links">
+            <div class="help-footer">
+                <a href="#">Ajuda - Perguntas Frequentes</a>
+            </div>
+            <div class="payment-footer">
+                <a href="#">Formas de Pagamento</a>
+            </div>
+            <div class="social-media-footer">
+                <a href="#">Contatos e Redes Sociais</a>
+            </div>
+        </div>
+        <div class="autores">
+            <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
+            <p>Copyright &copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content flex">
+            <span class="close">x</span>
+            <img src="../img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
+            <div class="bg-input flex">
+                <form class="space flex">
+                    <input type="text" id="input1" name="input1" placeholder="Email"><br><br>
+                    <input type="password" id="input2" name="input2" placeholder="Senha"><br><br>
+                    <button type="submit" class="btn-login"><a href="../login-page/index.html">Entrar</a></button>
+                    <div class="more-options">
+                        <button type="submit" class="btn-more">Entrar com Google</button>
+                        <button type="submit" class="btn-more">Entrar de outra forma</button>
+                    </div>
+                    <p class="forgot-password">Esqueci a senha</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../components/sidebar/sidebar.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
