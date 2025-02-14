@@ -32,7 +32,6 @@ window.onclick = function (event) {
     }
 }
 
-<<<<<<< HEAD
 // ==================== MENU LATERAL / SIDEBAR ====================
 
 const showMenu = document.getElementById("showMenu");
