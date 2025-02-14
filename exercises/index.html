@@ -29,13 +29,13 @@
     </header>
     <ul>
       <li>
-        <a href="./login-page/index.html"><button type="button" onclick="onClick(this)">
+        <a href="../login-page/index.html"><button type="button" onclick="onClick(this)">
             <i class="ai-home-alt1"></i>
             <p>Início</p>
           </button></a>
       </li>
       <li>
-        <a href="./user/who-follow/index.html">
+        <a href="../user/who-follow/index.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-person-check"></i>
             <p>Quem eu sigo</p>
@@ -86,7 +86,7 @@
         </div>
       </li>
       <li>
-        <a href="./doug/comunity/comunity.html">
+        <a href="../doug/comunity/comunity.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-people-group"></i>
             <p>Comunidade</p>
@@ -105,7 +105,7 @@
         </div>
       </li>
       <li>
-        <a href="./user/historic/index.html">
+        <a href="../user/historic/index.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-history"></i>
             <p>Histórico</p>
@@ -113,7 +113,7 @@
         </a>
       </li>
       <li>
-        <a href="./user/favorite-roads/index.html">
+        <a href="../user/favorite-roads/index.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-heart"></i>
             <p>Trilhas Favoritas</p>
@@ -121,7 +121,7 @@
         </a>
       </li>
       <li>
-        <a href="./user/historic/index.html">
+        <a href="../user/historic/index.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-statistic-up"></i>
             <p>Progresso</p>
@@ -129,7 +129,7 @@
         </a>
       </li>
       <li>
-        <a href="./doug/help/help-page.html">
+        <a href="../doug/help/help-page.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-question"></i>
             <p>Ajuda</p>
@@ -149,7 +149,7 @@
         </button>
       </li>
       <li>
-        <a href="./user-settings/user-information/index.html">
+        <a href="../user-settings/user-information/index.html">
           <button type="button" onclick="onClick(this)">
             <i class="ai-gear"></i>
             <p>Configurações</p>
@@ -158,6 +158,7 @@
       </li>
     </ul>
   </aside>
+
   <header>
     <nav>
       <ul class="nav flex">
@@ -173,11 +174,12 @@
             </form>
           </div>
         </li>
-        <li class="button-header">
-          <div>
-            <button type="button" id="openModalBtn">login</button>
-            <button type="button">cadastre-se</button>
-          </div>
+        <li class="user-button">
+          <a href="../user/historic/index.html">
+            <div class="flex user-page">
+              <i class="ai-person"></i>
+            </div>
+          </a>
         </li>
       </ul>
     </nav>
@@ -185,21 +187,31 @@
 
   <aside>
     <div class="buttons flex">
-        <div class="question flex">Questão anterior</div>
-        <div class="question flex">Nível Médio</div>
-        <div class="question flex">Próxima Questão</div>
+      <div class="question flex">
+        <h4>Questão anterior</h4>
+      </div>
+      <div class="question flex">
+        <h4>Nível Médio</h4>
+        <p>Dificuldade da questão</p>
+      </div>
+      <div class="question flex">
+        <h4>Próxima Questão</h4>
+      </div>
     </div>
   </aside>
 
   <main>
     <div class="main-card flex">
-        Como podemos definir um algoritmo?
-        <div class="atualizations flex">
-          <div class="att flex"><i class="ai-circle-check"></i> Acerto <p class="value">0</p></div>
-          <div class="att flex"><i class="ai-circle-x"></i> Erro <p class="value">0</p></div>
-          <div class="att flex"><i class="ai-circle-minus"></i> Ignorada <p class="value">0</p></div>
+      Como podemos definir um algoritmo?
+      <div class="atualizations flex">
+        <div class="att flex"><i class="ai-circle-check"></i> Acerto <p class="value">0</p>
+        </div>
+        <div class="att flex"><i class="ai-circle-x"></i> Erro <p class="value">0</p>
+        </div>
+        <div class="att flex"><i class="ai-circle-minus"></i> Ignorada <p class="value">0</p>
         </div>
       </div>
+    </div>
   </main>
 
   <section class="alternate-card flex">
@@ -238,7 +250,7 @@
   <div id="myModal" class="modal">
     <div class="modal-content flex">
       <span class="close">x</span>
-      <img src="./img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
+      <img src="../img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
       <div class="bg-input flex">
         <form class="space flex">
           <input type="text" id="input1" name="input1" placeholder="Email"><br><br>
@@ -253,9 +265,8 @@
       </div>
     </div>
   </div>
-
-  <script src="../script.js"></script>
   <script src="../sidebar/sidebar.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>
