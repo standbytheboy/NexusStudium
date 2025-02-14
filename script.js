@@ -35,7 +35,7 @@ window.onclick = function (event) {
 // ==================== MENU LATERAL / SIDEBAR ====================
 
 const showMenu = document.getElementById("showMenu");
-const sidebar = document.querySelector(".sidebar");
+const sidebar = document.querySelectorAll(".sidebar");
 
 showMenu.addEventListener("click", () => {
   sidebar.classList.toggle("ocult-sidebar");
