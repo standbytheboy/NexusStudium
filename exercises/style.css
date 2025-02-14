@@ -1,0 +1,28 @@
+:root {
+    font-size: 62.5%;
+}
+
+aside, main {
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+.question, .main-card {
+    background-color: #10161C;
+    width: 24rem;
+    height: 6rem;
+    color: #8DB1AB;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+.main-card {
+    width: 120rem;
+    height: 40rem;
+    font-size: 4rem;
+}
