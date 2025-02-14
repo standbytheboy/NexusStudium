@@ -2,7 +2,7 @@
     font-size: 62.5%;
 }
 
-aside, main {
+main, section, aside {
     max-width: 120rem;
     margin: 0 auto;
 
@@ -10,9 +10,10 @@ aside, main {
 
 .buttons {
     justify-content: space-between;
+    margin: 5rem 0 2.2rem;
 }
 
-.question, .main-card {
+.question, .main-card, .alternate-card {
     background-color: #10161C;
     width: 24rem;
     height: 6rem;
@@ -21,8 +22,48 @@ aside, main {
     border-radius: 2rem;
 }
 
-.main-card {
+.main-card, .alternative {
+    flex-direction: column;
+}
+
+.main-card, .alternate-card {
     width: 120rem;
     height: 40rem;
     font-size: 4rem;
+    gap: 10rem;
+    border: 1px solid #8DB1AB;
+    padding: 5rem;
+    margin-bottom: 7.5rem;
+}
+
+.atualizations {
+    gap: 3rem;
+}
+
+.att {
+    background-color: #5D5791;
+    width: 22.5rem;
+    height: 3.8rem;
+    color: #8DB1AB;
+    font-size: 2rem;
+    border-radius: 2rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.alternative {
+    background-color: #FFFFFF10;
+    width: 34.5rem;
+    height: 30rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.alternative h3 {
+    font-size: 2.2rem;
+}
+.alternative p {
+    font-size: 2rem;
 }
