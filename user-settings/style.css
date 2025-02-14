@@ -19,18 +19,11 @@ body {
     align-items: center;
 }
 
-.grid-container {
+.grid-container-user {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: 1400px;
-    margin: 0 auto 50px;
-}
-
-.grid-header {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    max-width: 1400px;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .menu-btn {
@@ -49,57 +42,6 @@ body {
     right: 16px;
 }
 
-.search-bar {
-    grid-column: 4 / 9;
-    margin: 0 auto;
-    margin-top: 36px;
-}
-
-.bg-search {
-    width: 650px;
-    height: 50px;
-    background-color: black;
-    border: 1px solid #FFA630;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-}
-
-.search-icon {
-    margin-right: 33px;
-}
-
-.search-button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    margin-left: 17.35px;
-    cursor: pointer;
-    color: #FFA630;
-}
-
-.search-input {
-    all: unset;
-    background-color: black;
-    border: none;
-    width: 500px;
-    color: #FFA630;
-    font-size: 20px;
-}
-
-.button-header {
-    grid-column: 10 /13;
-    display: flex;
-}
-
-.search-input::placeholder {
-    color: #FFA630;
-}
-
-.user-button {
-    grid-column: 12/-1;
-    margin-top: 37px;
-}
-
 .user-button a {
     color: black;
 }
@@ -114,7 +56,6 @@ body {
 
 .left-card{
     grid-column: 2/6;
-    margin-left: 30px;
     width: 408px;
     height: 828px;
     background-color: rgba(0, 0, 0, .55);

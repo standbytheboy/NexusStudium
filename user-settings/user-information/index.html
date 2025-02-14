@@ -5,38 +5,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../components/header-nav/header.css">
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
+    <link rel="icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Informações do Usuário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <title>Nexus Studium</title>
 </head>
 
 <body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+            <img src="../../img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+            <li>
+                <a href="#"><button type="button" onclick="onClick(this)">
+                        <i class="ai-home-alt1"></i>
+                        <p>Início</p>
+                    </button></a>
+            </li>
+            <li>
+                <a href="../user/who-follow/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-person-check"></i>
+                        <p>Quem eu sigo</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-book-open"></i>
+                    <p>Artigos</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <button type="button">Display</button>
+                        </li>
+                        <li>
+                            <button type="button">Appearance</button>
+                        </li>
+                        <li>
+                            <button type="button">Preferences</button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-folder-add"></i>
+                    <p>Exercícios</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <button type="button">Article</button>
+                        </li>
+                        <li>
+                            <button type="button">Document</button>
+                        </li>
+                        <li>
+                            <button type="button">Video</button>
+                        </li>
+                        <li>
+                            <button type="button">Presentation</button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="../doug/comunity/comunity.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-people-group"></i>
+                        <p>Comunidade</p>
+                        <i class="ai-chevron-down-small"></i>
+                    </button>
+                </a>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <button type="button">Avatar</button>
+                        </li>
+                        <li>
+                            <button type="button">Theme</button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="../user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-history"></i>
+                        <p>Histórico</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../user/favorite-roads/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-heart"></i>
+                        <p>Trilhas Favoritas</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-statistic-up"></i>
+                        <p>Progresso</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="./doug/help/help-page.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-question"></i>
+                        <p>Ajuda</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-circle-plus"></i>
+                    <p>Feedback</p>
+                </button>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-language"></i>
+                    <p>Idiomas</p>
+                </button>
+            </li>
+            <li>
+                <a href="../user-settings/user-information/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-gear"></i>
+                        <p>Configurações</p>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </aside>
     <header>
         <nav>
-            <ul class="grid-header">
-                <li class="menu-btn">
-                    <a href="../../login-page/index.html"><img class="menu-icon" src="../../img/logomarca-png.png" alt="Logomarca do Nexus Studium"></a>
+            <ul class="nav flex">
+                <li class="nav-btn flex"><img id="showMenu" src="../../img/logomarca-png.png"
+                        alt="Logomarca NexusStudium" width="100px">
                 </li>
                 <li class="search-bar">
                     <div>
                         <form class="bg-search">
-                            <button class="search-button" type="submit"><i
-                                    class="search-icon fa-2x fa-solid fa-magnifying-glass"></i></button>
+                            <button title="btn" class="search-button" type="submit"><i class="search-icon"><img
+                                        src="../../img/searchIcon.svg" alt=""></i></button>
                             <input class="search-input" type="text" placeholder="O que você quer aprender?">
                         </form>
                     </div>
                 </li>
                 <li class="user-button">
-                    <a href="../../user/historic/index.html"><div class="flex user-page">
-                        <i class="fa-solid fa-user fa-2x"></i>
-                    </div></a>
+                    <a href="../user/historic/index.html">
+                        <div class="flex user-page">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="grid-container">
+    <main class="grid-container-user">
         <section class="flex left-card">
             <div class="flex head-user">
                 <div class="user">
@@ -135,7 +282,7 @@
         </div>
     </footer>
 
-    <script src="../../sidebar/sidebar.js"></script>
+    <script src="../../components/sidebar/sidebar.js"></script>
     <script src="../../script.js"></script>
 </body>
 
