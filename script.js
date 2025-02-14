@@ -32,6 +32,7 @@ window.onclick = function (event) {
     }
 }
 
+<<<<<<< HEAD
 // ==================== MENU LATERAL / SIDEBAR ====================
 
 const showMenu = document.getElementById("showMenu");
@@ -65,12 +66,3 @@ const onClick = (item) => {
   }
 };
 
-// ==================== MENU AJUDA / FAQ  ====================
-
-const toggles = document.querySelectorAll('.faq-toggle')
-
-toggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-        toggle.parentNode.classList.toggle('active')
-    })
-})
