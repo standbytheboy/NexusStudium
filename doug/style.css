@@ -834,3 +834,7 @@ footer{
 #btnSendChatNexus:hover {
     box-shadow: 1px 1px 5px gray;
 }
+
+button, #showMenu {
+    cursor: pointer;
+}
