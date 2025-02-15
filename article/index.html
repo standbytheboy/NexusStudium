@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link rel="stylesheet" href="./article.css">
+    <title>Nexus Studium</title>
+</head>
+
+<body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+            <img src="../img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+            <li>
+                <a href="../login-page/index.html"><button type="button" onclick="onClick(this)">
+                        <i class="ai-home-alt1"></i>
+                        <p>Início</p>
+                    </button></a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-person-check"></i>
+                    <p>Perfil</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../user/historic/index.html">
+                                <button type="button">Histórico</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../user/who-follow/index.html">
+                                <button type="button">Quem eu sigo</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../user/favorite-roads/index.html">
+                                <button type="button">Trilhas favoritas</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <!-- ============= MARCOS =============== -->
+                <a href="../doug/article/article.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-book-open"></i>
+                        <p>Artigos</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../doug/exercises/exercises.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-folder-add"></i>
+                        <p>Exercícios</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../doug/comunity/comunity.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-people-group"></i>
+                        <p>Comunidade</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-statistic-up"></i>
+                        <p>Progresso</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-question"></i>
+                    <p>Ajuda</p>
+                    <i class="ai-chevron-down-small"></i>
+
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Perguntas Frequentes</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Sobre</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Feedback</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doug/help/help-page.html">
+                                <button type="button">Suporte</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-language"></i>
+                    <p>Idiomas</p>
+                </button>
+            </li>
+            <li>
+                <a href="../user-settings/user-information/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-gear"></i>
+                        <p>Configurações</p>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <ul class="nav flex">
+                <li class="nav-btn flex"><img id="showMenu" src="../img/logomarca-png.png" alt="Logomarca NexusStudium"
+                        width="100px">
+                </li>
+                <li class="search-bar">
+                    <div>
+                        <form class="bg-search">
+                            <button title="btn" class="search-button" type="submit"><i class="search-icon"><img
+                                        src="../img/searchIcon.svg" alt=""></i></button>
+                            <input class="search-input" type="text" placeholder="O que você quer aprender?">
+                        </form>
+                    </div>
+                </li>
+                <li class="user-button">
+                    <a href="../user/historic/index.html">
+                        <div class="flex user-page">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="head">
+            <div class="title">
+                <h1>Tecnologia Para Programadores</h1>
+            </div>
+            <div class="sub">
+                <h2>Quanto tempo devemos estudar programação por dia</h2>
+                <p>Neste artigo você compreenderá um leque de possibilidades que alguns minutos diários podem fazer na
+                    sua vida, verá como um mínimo de tempo investido em seu desenvolvimento, no processo do aprendizado
+                    da programação, pode render em grandes oportunidades de trabalho.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>A prática nos quinze minutos</h3>
+            <p>
+                Em um processo de aprendizado, com boa disposição e foco, o nosso cérebro fica bem receptível as
+                informações adquiridas.
+                Neste momento não basta apenas absorver os conteúdos, é necessário processá-los de modo a transformá-los
+                em familiares. Isso só ocorre com a prática. Logo, é imprescindível, quase que simultaneamente, no
+                momento do estudo da programação, não ser apenas alguém que recebe conteúdo, mas é preciso colocá-lo em
+                prática. Ninguém aprende a dirigir somente na aula teórica, é preciso praticar o que aprendeu. Assim
+                sendo, não praticar o conteúdo absorvido, no dia seguinte terá que "aprender outra vez". Talvez esta
+                seja uma das maiores objeções de quem está estudando programação, os quinze minutos diários são
+                extremamente eficazes para a absorção e compreensão, mas é preciso treinar as habilidades para haver uma
+                familiarização satisfatória.
+            </p>
+            <h3>Organização dos quinze minutos</h3>
+            <p>Na verdade, não há limite para uma organização eficiente deste tempo tão precioso. Pense naquele pouco momento do seu dia que dê para encaixar esses quinze minutos.
+                Imaginemos, de forma plausível, no seu possível deslocamento até o trabalho, em um transporte público, sem prejuízo à aprendizagem, com uma atenção focada, conseguirá aproveitar este tempo.
+                Sem medo de errar, o principal obstáculo neste tempo livre será às redes sociais, principalmente os vídeos curtos, além das mensagens e textos, que no mais das vezes, de maneira alguma agregam valor no seu crescimento profissional e pessoal. É neste momento que você precisa dedicar os seus primeiros cinco minutos na absorção de algumas tags; nos cinco minutos seguintes se dedique a praticar o que aprendeu, coloque tudo em exercícios, dentro deste período repita o processo quantas vezes for preciso; nos cinco últimos minutos corrija o que errou e dê ênfase no que teve mais dificuldade. No dia seguinte, faça o mesmo procedimento, com novos conteúdos.</p>
+            <h3>A prática nos quinze minutos</h3>
+            <p>
+                Em um processo de aprendizado, com boa disposição e foco, o nosso cérebro fica bem receptível as
+                informações adquiridas.
+                Neste momento não basta apenas absorver os conteúdos, é necessário processá-los de modo a transformá-los
+                em familiares. Isso só ocorre com a prática. Logo, é imprescindível, quase que simultaneamente, no
+                momento do estudo da programação, não ser apenas alguém que recebe conteúdo, mas é preciso colocá-lo em
+                prática. Ninguém aprende a dirigir somente na aula teórica, é preciso praticar o que aprendeu. Assim
+                sendo, não praticar o conteúdo absorvido, no dia seguinte terá que "aprender outra vez". Talvez esta
+                seja uma das maiores objeções de quem está estudando programação, os quinze minutos diários são
+                extremamente eficazes para a absorção e compreensão, mas é preciso treinar as habilidades para haver uma
+                familiarização satisfatória.
+            </p>
+            <h3>Organização dos quinze minutos</h3>
+            <p>Na verdade, não há limite para uma organização eficiente deste tempo tão precioso. Pense naquele pouco momento do seu dia que dê para encaixar esses quinze minutos.
+                Imaginemos, de forma plausível, no seu possível deslocamento até o trabalho, em um transporte público, sem prejuízo à aprendizagem, com uma atenção focada, conseguirá aproveitar este tempo.
+                Sem medo de errar, o principal obstáculo neste tempo livre será às redes sociais, principalmente os vídeos curtos, além das mensagens e textos, que no mais das vezes, de maneira alguma agregam valor no seu crescimento profissional e pessoal. É neste momento que você precisa dedicar os seus primeiros cinco minutos na absorção de algumas tags; nos cinco minutos seguintes se dedique a praticar o que aprendeu, coloque tudo em exercícios, dentro deste período repita o processo quantas vezes for preciso; nos cinco últimos minutos corrija o que errou e dê ênfase no que teve mais dificuldade. No dia seguinte, faça o mesmo procedimento, com novos conteúdos.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links">
+            <div class="help-footer">
+                <a href="#">Ajuda - Perguntas Frequentes</a>
+            </div>
+            <div class="payment-footer">
+                <a href="#">Formas de Pagamento</a>
+            </div>
+            <div class="social-media-footer">
+                <a href="#">Contatos e Redes Sociais</a>
+            </div>
+        </div>
+        <div class="autores">
+            <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
+            <p>Copyright &copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content flex">
+            <span class="close">x</span>
+            <img src="../img/logomarca-png.png" alt="Logomarca Nexus Studium" width="400">
+            <div class="bg-input flex">
+                <form class="space flex">
+                    <input type="text" id="input1" name="input1" placeholder="Email"><br><br>
+                    <input type="password" id="input2" name="input2" placeholder="Senha"><br><br>
+                    <button type="submit" class="btn-login"><a href="../login-page/index.html">Entrar</a></button>
+                    <div class="more-options">
+                        <button type="submit" class="btn-more">Entrar com Google</button>
+                        <button type="submit" class="btn-more">Entrar de outra forma</button>
+                    </div>
+                    <p class="forgot-password">Esqueci a senha</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../components/sidebar/sidebar.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
