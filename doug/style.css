@@ -486,11 +486,16 @@ footer{
     cursor: pointer;
 }
 
+.active_help {
+    display:block;
+
+}
+
 
 /* ============================= TESTE PAINEL QUESTION FAQ ====================*/
 
 .faq-container {
-    display: block;  /* <---------- aqui tem que alterar o display para block*/
+    display: none;  /* <---------- aqui tem que alterar o display para block*/
     flex-direction: column;
     justify-content: center;
     padding: 30px;
@@ -500,6 +505,7 @@ footer{
     border: 2px solid #8DB1AB;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
   }
 
   .faq-container h2 {
@@ -523,7 +529,13 @@ footer{
   
   .faq.active2 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
   }
+
+  .faq-container::-webkit-scrollbar {
+    display: none;
+}
   
   .faq-title {
     margin: 0 35px 0 0;
