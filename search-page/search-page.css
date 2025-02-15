@@ -45,3 +45,9 @@ h2 {
     border: 1px solid #8DB1AB50;
     color: #FFA630;
 }
+
+.video img {
+    max-width: 28rem;
+    max-height: 17rem;
+    border-radius: 2rem;
+}

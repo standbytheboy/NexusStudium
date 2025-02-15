@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: "ABeeZee", serif;   
 }
 
 a {
@@ -405,8 +408,13 @@ footer{
 
 }
 
+hr {
+    border: 1px solid #8DB1AB;
+}
+
 .painel_content_cabecalho h1 {
     font-size: 40px;
+    margin-bottom: 2rem;
 }
 
 .painel_content_cabecalho p {
