@@ -317,7 +317,7 @@ button:hover {
 .modal-content {
     background: linear-gradient(#13678A, #5D5791);
     margin: 4rem auto;
-    padding: 20px;
+    padding: 2rem 6rem;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
@@ -339,6 +339,7 @@ button:hover {
 }
 
 .bg-input input {
+    font-size: 20px;
     width: 525px;
     height: 60px;
     border-radius: 20px;

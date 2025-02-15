@@ -926,5 +926,6 @@ footer{
     box-shadow: 1px 1px 5px gray;
 }
 
-/* ------- TESTE FAQ ------ */
-
+button, #showMenu {
+    cursor: pointer;
+}

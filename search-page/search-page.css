@@ -1,0 +1,47 @@
+:root {
+    font-size: 62.5%;
+}
+
+.main-container {
+    max-width: 130rem;
+    background-color: #00000071;
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    color: #8DB1AB;
+    margin: 4rem auto;
+    border: 1px solid #8DB1AB;
+    overflow: hidden;
+}
+
+.road {
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.videos {
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.video {
+    background-color: black;
+    min-width: 27rem;
+    min-height: 15rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #8DB1AB50;
+}
+
+.video-title {
+    background-color: #00000071;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    border: 1px solid #8DB1AB50;
+    color: #FFA630;
+}

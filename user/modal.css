@@ -1,4 +1,4 @@
-/* MODAL DE LOGIN */
+/* MODAL DE PROGRESSO */
 .modal {
     display: none;
     position: fixed;
@@ -113,4 +113,14 @@
     position: relative;
     left: 13.5rem;
     top: -2.5rem;
+}
+
+/* ======================= SIDEBAR ======================= */
+
+* {
+    text-decoration: none;
+}
+
+button, #showMenu {
+    cursor: pointer;
 }
