@@ -679,7 +679,7 @@ hr {
 }
 
 /*-----Painel Feedback-----*/
-#painel_feedback {
+.painel_feedback {
     display: none;  /* <---------- aqui tem que alterar o display para flex*/
     flex-direction: column;
     justify-content: center;
@@ -692,7 +692,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#painel_feedback h2 {
+.painel_feedback h2 {
     font-size: 2rem;
     color: #8DB1AB;
 }
@@ -779,7 +779,7 @@ hr {
 }
 
 /*-----Painel Nexus Chat-----*/
-#painel_nexusChat {
+.painel_nexusChat {
     display: none; /* <---------- aqui tem que alterar o display para flex*/
     flex-direction: column;
     width: 694px;
