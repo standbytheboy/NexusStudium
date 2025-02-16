@@ -5,15 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de ajuda</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+          <img src="../../img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+          <li>
+            <a href="../../login-page/index.html"><button type="button" onclick="onClick(this)">
+                <i class="ai-home-alt1"></i>
+                <p>Início</p>
+              </button></a>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-person-check"></i>
+              <p>Perfil</p>
+              <i class="ai-chevron-down-small"></i>
+            </button>
+            <div class="sub-menu">
+              <ul>
+                <li>
+                  <a href="../../user/historic/index.html">
+                    <button type="button">Histórico</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../user/who-follow/index.html">
+                    <button type="button">Quem eu sigo</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../user/favorite-roads/index.html">
+                    <button type="button">Trilhas favoritas</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      
+          <li> <!-- ============= MARCOS =============== -->
+            <a href="../../doug/article/article.html">
+              <button type="button" onclick="onClick(this)">
+                <i class="ai-book-open"></i>
+                <p>Artigos</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="../../doug/exercises/exercises.html">
+              <button type="button" onclick="onClick(this)">
+                <i class="ai-folder-add"></i>
+                <p>Exercícios</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="../../doug/comunity/comunity.html">
+              <button type="button" onclick="onClick(this)">
+                <i class="ai-people-group"></i>
+                <p>Comunidade</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="../../user/historic/index.html">
+              <button type="button" onclick="onClick(this)">
+                <i class="ai-statistic-up"></i>
+                <p>Progresso</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-question"></i>
+              <p>Ajuda</p>
+              <i class="ai-chevron-down-small"></i>
+      
+            </button>
+            <div class="sub-menu">
+              <ul>
+                <li>
+                  <a href="../../doug/help/help-page.html">
+                    <button type="button">Perguntas Frequentes</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../doug/help/help-page.html">
+                    <button type="button">Sobre</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../doug/help/help-page.html">
+                    <button type="button">Feedback</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../doug/help/help-page.html">
+                    <button type="button">Suporte</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" onclick="onClick(this)">
+              <i class="ai-language"></i>
+              <p>Idiomas</p>
+            </button>
+          </li>
+          <li>
+            <a href="../../user-settings/user-information/index.html">
+              <button type="button" onclick="onClick(this)">
+                <i class="ai-gear"></i>
+                <p>Configurações</p>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
     <header>
         <nav>
             <ul class="grid-header">
                 <li class="menu-btn">
-                    <img class="menu-icon" src="../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+                    <img class="menu-icon" id="showMenu" src="../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
                 </li>
                 <li class="search-bar">
                     <div>
@@ -26,7 +154,8 @@
                 </li>
                 <li class="user-button">
                     <div class="flex user-page">
-                        <i class="fa-solid fa-user fa-2x"></i>
+                        <a href="../../user/historic/index.html"><i class="fa-solid fa-user fa-2x"></i></a>
+
                     </div>
                 </li>
             </ul>
@@ -40,17 +169,17 @@
                 <h2>AJUDA</h2>
                 <nav>
                     <ul class="help_list">
-                        <li id="help_faq">PERGUNTAS FREQUENTES <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
-                        <li id="help_about">SOBRE <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
-                        <li id="help_feedback">FEEDBACK <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
-                        <li id="help_suport">SUPORTE <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
+                        <li onclick="togglePainel('faq_container')" id="help_faq">PERGUNTAS FREQUENTES <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
+                        <li onclick="togglePainel('faq_about')" id="help_about">SOBRE <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
+                        <li onclick="togglePainel('faq_feedback')" id="help_feedback">FEEDBACK <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
+                        <li onclick="togglePainel('faq_nexusChat')" id="help_suport">SUPORTE <i class="fa-solid fa-circle-chevron-right" style="color: #086788; font-size: 30px;"></i></li>
                     </ul>
                 </nav>
 
             </div>
 
 <!-- =========================PAINEL QUESTION ========================-->
-            <div id="faq_container" class="faq-container">
+            <div id="faq_container" class="faq-container painel">
 
                 <h2>Perguntas Frequentes</h2>
 
@@ -140,8 +269,8 @@
             </div>
 
 <!-- =========================PAINEL SOBRE ========================-->
-            <div class="painel_about">
-                <h2>Sobre</h2>
+            <div class="painel painel_about" id="faq_about">
+                <h2 class="title">Sobre</h2>
                 <div class="about_content">
                     <div class="about_top">
                         <h2>NOSSA HISTÓRIA</h2>
@@ -152,15 +281,14 @@
                         Ratione doloremque vero voluptatem, perspiciatis provident voluptas labore porro natus. Dolor aliquam doloremque dicta corporis deserunt voluptatem dolores perspiciatis aliquid quod tenetur. Provident officia ad cupiditate hic sequi a magni.
                         Dicta fuga recusandae numquam esse voluptatibus. Obcaecati eaque quidem minus quod adipisci eveniet dolor voluptatum libero ea provident sapiente, velit sequi temporibus. Et in culpa placeat magni suscipit laboriosam! Eligendi.
                         Nobis debitis nam dolorem praesentium sed quam, ad, nesciunt tempore impedit quas voluptatibus consequuntur sequi velit! Neque quidem ipsam consectetur architecto incidunt facere culpa officiis suscipit laboriosam, repellat commodi at.
-                        Sunt, accusantium modi. Voluptas ipsum tempore, libero temporibus natus, voluptatem amet facere provident quae commodi voluptatibus ex quibusdam accusantium.
-
+                        Sunt, accusantium modi. 
                     </div>
                 </div>
     
             </div>
 
 <!-- =========================PAINEL FEEDBACK ========================-->
-            <div id="painel_feedback">
+            <div class="painel painel_feedback" id="faq_feedback">
                 <h2>Feedback</h2>
                 <div class="feedback_content">
                     <div class="feedback_top">
@@ -182,7 +310,7 @@
             </div>
 
 <!-- =========================PAINEL NEXUSCHAT ========================-->
-            <div id="painel_nexusChat">
+            <div class="painel painel_nexusChat" id="faq_nexusChat">
                 <div class="nexusChat_top">
                     <h2><i class="fa-solid fa-circle-chevron-left" style="color: white; padding-right: 10px;"></i>NexusChat</h2>
                 </div>
@@ -246,6 +374,7 @@
         </div>
     </footer>
 
+    <script src="../../components/sidebar/sidebar.js"></script>
     <script src="../script.js"></script>
 
 </body>

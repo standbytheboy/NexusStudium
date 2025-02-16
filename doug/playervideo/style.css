@@ -16,7 +16,7 @@ body {
 
 /*----------------------- Cabeçalho (Header) -----------------------*/
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: 1400px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
 }
 
 .grid-header {
@@ -103,7 +103,7 @@ body {
     margin-top: 30px;
 }
 
-.user-page{
+.user-page {
     width: 67px;
     height: 67px;
     background-color: #FFA630;
@@ -148,7 +148,7 @@ body {
     align-items: center;
     padding: 75px 40px;
     margin: 0 auto;
-    border: 3px solid #13678A ;
+    border: 3px solid #13678A;
     border-radius: 20px;
     width: 1440px;
     height: 798px;
@@ -225,7 +225,7 @@ body {
     align-items: center;
     width: 692px;
     height: 486px;
-    background-color: #086788 ;
+    background-color: #086788;
 }
 
 .video-title {
@@ -233,7 +233,7 @@ body {
     align-items: center;
     text-align: center;
     height: 82px;
-    color: #8DB1AB ;
+    color: #8DB1AB;
 }
 
 .info-title {
@@ -291,12 +291,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px 20px 0 0 ;
+    border-radius: 20px 20px 0 0;
     width: 290px;
     height: 54px;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.555);
     color: white;
 }
 
@@ -307,7 +306,6 @@ body {
     gap: 6px;
     width: 290px;
     height: 68px;
-    background-color: rgba(0, 0, 0, 0.555);
 }
 
 .foot-comment input {
@@ -332,28 +330,33 @@ body {
 
 /*----------------------- Cabeçalho (Footer) -----------------------*/
 
-footer{
-    position: relative;
+footer {
+    margin-top: auto;
     width: 100%;
     bottom: 0;
 }
 
-.links{
-    background-color: rgba(0, 0, 0, 0.50);
+.links {
     display: flex;
     justify-content: center;
     gap: 220px;
     padding-top: 30px;
-  }
-  
-  .links a{
+}
+
+.links a {
     color: #8DB1AB;
-  }
-  
-  .autores {
+}
+
+.autores {
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.50);
     padding: 25px 0;
     font-size: 12px;
-  }
+}
+
+/*----------------------- Alterações Gerais -----------------------*/
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

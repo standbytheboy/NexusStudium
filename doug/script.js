@@ -1,17 +1,28 @@
-const togglesFaq = document.querySelectorAll('.faq-toggle')
-
-togglesFaq.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-        toggle.parentNode.classList.toggle('active2')
-    })
-});
-
-document.getElementById("help_faq").addEventListener("click", () => {
-    let faqContainer = document.getElementById("faq_container");
-        if (faqContainer.style.display === "none" || faqContainer.style.display === "") {
-            faqContainer.style.display ==="block";
+function togglePainel(painelId) {
+    const paineis = document.querySelectorAll('.painel');
+    
+    paineis.forEach(painel => {
+        if (painel.id === painelId) {
+            painel.style.display = painel.style.display === "block" ? "none" : "block";
         } else {
-            faqContainer.style.display = "none";
-        };
+            painel.style.display = "none";
+        }
+    });
+}
 
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach(faq => {
+        faq.addEventListener("click", function () {
+            this.classList.toggle("active2");
+
+            const faqText = this.querySelector(".faq-text");
+            if (faqText.style.display === "none" || !faqText.style.display) {
+                faqText.style.display = "block";
+            } else {
+                faqText.style.display = "none";
+            }
+        });
+    });
+});

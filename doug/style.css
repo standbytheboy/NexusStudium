@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: "ABeeZee", serif;   
+    font-family: "ABeeZee", serif;  
 }
 
 a {
@@ -641,6 +641,7 @@ hr {
     border: 2px solid #8DB1AB;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .painel_about h2 {
@@ -648,9 +649,14 @@ hr {
     color: #8DB1AB;
 }
 
+.title {
+    margin-bottom: 50px;
+}
+
 .about_content {
     width: 656px;
     height: 560px;
+    margin: 0 auto;
 }
 
 .about_top {
@@ -679,27 +685,27 @@ hr {
 }
 
 /*-----Painel Feedback-----*/
-#painel_feedback {
+.painel_feedback {
     display: none;  /* <---------- aqui tem que alterar o display para flex*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
     width: 782px;
     height: 828px;
     border: 2px solid #8DB1AB;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
 }
 
-#painel_feedback h2 {
+.painel_feedback h2 {
     font-size: 2rem;
     color: #8DB1AB;
+    text-align: center;
 }
 
 .feedback_content {
     width: 656px;
     height: 560px;
+    margin: 50px auto;
 }
 
 .feedback_top {
@@ -779,7 +785,7 @@ hr {
 }
 
 /*-----Painel Nexus Chat-----*/
-#painel_nexusChat {
+.painel_nexusChat {
     display: none; /* <---------- aqui tem que alterar o display para flex*/
     flex-direction: column;
     width: 694px;
