@@ -13,7 +13,7 @@ body {
     background: #273847;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ body {
     color: black;
 }
 
-.user-page{
+.user-page {
     width: 67px;
     height: 67px;
     background-color: #FFA630;
@@ -54,7 +54,7 @@ body {
     border: 8px solid black;
 }
 
-.left-card{
+.left-card {
     grid-column: 2/6;
     width: 408px;
     height: 828px;
@@ -65,7 +65,7 @@ body {
     padding: 20px 0 70px;
 }
 
-.head-user{
+.head-user {
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -106,13 +106,13 @@ body {
     cursor: pointer;
 }
 
-.select-btn:hover{
+.select-btn:hover {
     background-color: black;
     border: 1px solid #8DB1AB;
     padding-left: 35px;
 }
 
-.right-card{
+.right-card {
     grid-column: 6/-1;
     width: 684px;
     height: 828px;
@@ -122,21 +122,22 @@ body {
     flex-wrap: wrap;
 }
 
-h2{
+h2 {
     color: #8DB1AB;
     font-size: 30px;
     font-weight: 400;
     margin-top: 30px;
 }
 
-.form{
+.form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.full-input, .half-input{
+.full-input,
+.half-input {
     background-color: #8DB1AB;
     border-radius: 10px;
     height: 84px;
@@ -145,15 +146,15 @@ h2{
     border: none;
 }
 
-.full-input{
+.full-input {
     width: 610px;
 }
 
-.half-input{
+.half-input {
     width: 300px;
 }
 
-.bg-label{
+.bg-label {
     background-color: rgba(0, 0, 0, .55);
     width: 200px;
     height: 25px;
@@ -165,20 +166,20 @@ h2{
     right: 190px;
 }
 
-.wrap{
+.wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 9px;
 }
 
-label{
+label {
     color: aliceblue;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-half-label{
+.bg-half-label {
     background-color: rgba(0, 0, 0, .55);
     width: 200px;
     height: 25px;
@@ -190,7 +191,7 @@ label{
     left: 18px;
 }
 
-.btn-form{
+.btn-form {
     margin: 20px 0;
     width: 180px;
     height: 35px;
@@ -202,34 +203,39 @@ label{
     cursor: pointer;
 }
 
-.btn-form:hover{
+.btn-form:hover {
     background-color: #5D5791;
     border: .5px solid #8DB1AB;
     color: #8DB1AB;
 }
 
-footer{
+footer {
     position: relative;
     width: 100%;
     bottom: 0;
 }
 
-.links{
+.links {
     background-color: rgba(0, 0, 0, 0.50);
     display: flex;
     justify-content: center;
     gap: 220px;
     padding-top: 30px;
-  }
-  
-  .links a, .select-btn a{
+}
+
+.links a,
+.select-btn a {
     color: #8DB1AB;
-  }
-  
-  .autores {
+}
+
+.autores {
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.50);
     padding: 25px 0;
     font-size: 12px;
-  }
+}
+
+button {
+    cursor: pointer;
+}
