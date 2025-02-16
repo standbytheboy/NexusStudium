@@ -6,3 +6,7 @@
 .historic a {
     color: #8DB1AB;
 }
+
+.bg-card {
+    cursor: pointer;
+}

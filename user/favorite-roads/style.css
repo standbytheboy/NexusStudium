@@ -6,3 +6,7 @@
 .roads a {
     color: #8DB1AB;
 }
+
+.road-follow {
+    cursor: pointer;
+}
