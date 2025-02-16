@@ -1,3 +1,7 @@
+* {
+    font-family: "ABeeZee", sans-serif ;
+}
+
 /* MODAL DE PROGRESSO */
 .modal {
     display: none;

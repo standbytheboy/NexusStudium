@@ -6,3 +6,7 @@
 .follow a {
     color: #8DB1AB;
 }
+
+.mentor {
+    cursor: pointer;
+}

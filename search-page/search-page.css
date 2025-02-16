@@ -48,6 +48,7 @@ h2 {
 
 .video img {
     max-width: 28rem;
-    max-height: 17rem;
+    min-height: 18rem;
     border-radius: 2rem;
+    cursor: pointer;
 }
